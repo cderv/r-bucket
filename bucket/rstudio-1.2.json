@@ -13,6 +13,7 @@
               "$WScriptShell = New-Object -ComObject WScript.Shell",
               "$Shortcut = $WScriptShell.CreateShortcut($ShortcutLocation)",
               "$Shortcut.TargetPath = $SourceFileLocation",
+              "$Shortcut.WorkingDirectory =\"$env:HOME\\Documents\"",
               "$Shortcut.Save()"
           ]
       }
