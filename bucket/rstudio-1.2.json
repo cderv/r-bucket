@@ -6,17 +6,7 @@
   "architecture": {
       "64bit": {
           "url": "https://download1.rstudio.org/desktop/windows/RStudio-1.2.5042.zip",
-          "hash": "76a7c2f2b6fc129f27bf70ea4a535175a839bd73065eba06ffcf78f1134bc2bf",
-          "post_install": [
-              "$SourceFileLocation = \"$dir\\bin\\RStudio.exe\"",
-              "$ShortcutLocation = \"$env:HOME\\desktop\\$app.lnk\"",
-              "if (Test-Path $ShortcutLocation) { Remove-Item $ShortcutLocation }",
-              "$WScriptShell = New-Object -ComObject WScript.Shell",
-              "$Shortcut = $WScriptShell.CreateShortcut($ShortcutLocation)",
-              "$Shortcut.TargetPath = $SourceFileLocation",
-              "$Shortcut.WorkingDirectory =\"$env:HOME\\Documents\"",
-              "$Shortcut.Save()"
-          ]
+          "hash": "76a7c2f2b6fc129f27bf70ea4a535175a839bd73065eba06ffcf78f1134bc2bf"
       }
   },
   "bin": [
@@ -28,7 +18,7 @@
   "shortcuts": [
       [
           "bin\\rstudio.exe",
-          "R Studio 1.2"
+          "RStudio 1.2"
       ]
   ]
 }
