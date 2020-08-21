@@ -1,0 +1,32 @@
+{
+  "version": "1.2.50.42",
+  "homepage": "https://www.rstudio.com/",
+  "description": "An IDE for R, which includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.",
+  "license": "AGPL-3.0-only",
+  "architecture": {
+      "64bit": {
+          "url": "https://download1.rstudio.org/desktop/windows/RStudio-1.2.5042.zip",
+          "post_install": [
+              "$SourceFileLocation = \"$dir\\bin\\RStudio.exe\"",
+              "$ShortcutLocation = \"$env:HOME\\desktop\\$app.lnk\"",
+              "if (Test-Path $ShortcutLocation) { Remove-Item $ShortcutLocation }",
+              "$WScriptShell = New-Object -ComObject WScript.Shell",
+              "$Shortcut = $WScriptShell.CreateShortcut($ShortcutLocation)",
+              "$Shortcut.TargetPath = $SourceFileLocation",
+              "$Shortcut.Save()"
+          ]
+      }
+  },
+  "bin": [
+      [
+          "bin\\rstudio.exe",
+          "rstudio-1.2"
+      ]
+  ],
+  "shortcuts": [
+      [
+          "bin\\rstudio.exe",
+          "R Studio 1.2"
+      ]
+  ]
+}
