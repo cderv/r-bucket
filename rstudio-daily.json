@@ -1,0 +1,44 @@
+{
+  "version": "1.4.727",
+  "homepage": "https://www.rstudio.com/",
+  "description": "An IDE for R, which includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.",
+  "license": "AGPL-3.0-only",
+  "architecture": {
+      "64bit": {
+          "url": "https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-1.4.727.zip",
+          "hash": "8030637dd5600b18f2b505472a2a0efb10edaaabe59bd1c8f7594d7a03d41ae2",
+          "post_install": [
+              "$SourceFileLocation = \"$dir\\bin\\RStudio.exe\"",
+              "$ShortcutLocation = \"$env:HOME\\RStudio Daily.lnk\"",
+              "if (Test-Path $ShortcutLocation) { Remove-Item $ShortcutLocation }",
+              "$WScriptShell = New-Object -ComObject WScript.Shell",
+              "$Shortcut = $WScriptShell.CreateShortcut($ShortcutLocation)",
+              "$Shortcut.TargetPath = $SourceFileLocation",
+              "$Shortcut.Save()"
+          ]
+      }
+  },
+  "bin": [
+      [
+          "bin\\rstudio.exe",
+          "rstudio-daily"
+      ]
+  ],
+  "shortcuts": [
+      [
+          "bin\\rstudio.exe",
+          "R Studio"
+      ]
+  ],
+  "checkver": {
+      "url": "https://dailies.rstudio.com",
+      "regex": "RStudio-([\\d.]+).exe"
+  },
+  "autoupdate": {
+      "architecture": {
+          "64bit": {
+              "url": "https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-$version.zip"
+          }
+      }
+  }
+}
