@@ -31,7 +31,7 @@
       ]
   ],
   "checkver": {
-      "url": "https://dailies.rstudio.com",
+      "url": "https://dailies.rstudio.com/rstudio/oss/windows/xcopy/",
       "regex": "RStudio-([\\d.]+).exe"
   },
   "autoupdate": {
