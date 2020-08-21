@@ -27,7 +27,7 @@
   "shortcuts": [
       [
           "bin\\rstudio.exe",
-          "R Studio"
+          "R Studio Daily"
       ]
   ],
   "checkver": {
