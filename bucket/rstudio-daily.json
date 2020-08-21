@@ -9,7 +9,7 @@
           "hash": "8030637dd5600b18f2b505472a2a0efb10edaaabe59bd1c8f7594d7a03d41ae2",
           "post_install": [
               "$SourceFileLocation = \"$dir\\bin\\RStudio.exe\"",
-              "$ShortcutLocation = \"$env:HOME\\RStudio Daily.lnk\"",
+              "$ShortcutLocation = \"$env:HOME\\desktop\\RStudio Daily.lnk\"",
               "if (Test-Path $ShortcutLocation) { Remove-Item $ShortcutLocation }",
               "$WScriptShell = New-Object -ComObject WScript.Shell",
               "$Shortcut = $WScriptShell.CreateShortcut($ShortcutLocation)",
