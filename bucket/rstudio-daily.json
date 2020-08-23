@@ -1,35 +1,35 @@
 {
-  "version": "1.4.727",
-  "homepage": "https://www.rstudio.com/",
-  "description": "An IDE for R, which includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.",
-  "license": "AGPL-3.0-only",
-  "architecture": {
-      "64bit": {
-          "url": "https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-1.4.727.zip",
-          "hash": "8030637dd5600b18f2b505472a2a0efb10edaaabe59bd1c8f7594d7a03d41ae2"
-      }
-  },
-  "bin": [
-      [
-          "bin\\rstudio.exe",
-          "rstudio-daily"
-      ]
-  ],
-  "shortcuts": [
-      [
-          "bin\\rstudio.exe",
-          "RStudio Daily"
-      ]
-  ],
-  "checkver": {
-      "url": "https://dailies.rstudio.com/rstudio/oss/windows/xcopy/",
-      "regex": "RStudio-([\\d.]+).zip"
-  },
-  "autoupdate": {
-      "architecture": {
-          "64bit": {
-              "url": "https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-$version.zip"
-          }
-      }
-  }
+    "version": "1.4.733",
+    "homepage": "https://www.rstudio.com/",
+    "description": "An IDE for R, which includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.",
+    "license": "AGPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-1.4.733.zip",
+            "hash": "63e01d1c3b503b8fa34dcbe85cc2c3dc2d961a695474cfa77a401feeabc08118"
+        }
+    },
+    "bin": [
+        [
+            "bin\\rstudio.exe",
+            "rstudio-daily"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "bin\\rstudio.exe",
+            "RStudio Daily"
+        ]
+    ],
+    "checkver": {
+        "url": "https://dailies.rstudio.com/rstudio/oss/windows/xcopy/",
+        "regex": "RStudio-([\\d.]+).zip"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-$version.zip"
+            }
+        }
+    }
 }
