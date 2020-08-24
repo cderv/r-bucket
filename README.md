@@ -1,3 +1,5 @@
+![](https://github.com/cderv/r-bucket/workflows/Excavator/badge.svg)
+
 # Scoop bucket for an R user
 
 This repos contains some manifests I use to quickly install and update some applications useful for an R user that I don't find in any other bucket.
