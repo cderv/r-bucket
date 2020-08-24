@@ -2,7 +2,7 @@
 
 This repos contains some manifests I use to quickly install and update some applications useful for an R user that I don't find in any other bucket.
 
-## App in this bucket
+## Apps in this bucket
 
 * RStudio 1.2 (installer-less)
 * RStudio daily (installer-less)
