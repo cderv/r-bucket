@@ -1,32 +1,32 @@
 {
-  "description": "A lightweight, cross-platform, portable, and easy-to-maintain LaTeX distribution based on TeX Live. This versions is infra-only and contains no packages.",  
-  "homepage": "https://yihui.org/tinytex/",
-  "url": "https://github.com/yihui/tinytex-releases/releases/download/v2020.09/TinyTeX-0.zip",
-  "extract_dir": "TinyTex",
-  "license": "https://tug.org/texlive/LICENSE.TL",
-  "hash": "15723290e2f8ba38a87970b7d9c4e0fa0d52d6236c6eabb9a8b534bad7843ff5",
-  "version": "2020.09",
-  "notes": "For full documentation, see https://yihui.org/tinytex/",
-  "bin": [
-    [
-      "bin\\win32\\tlmgr.bat",
-      "tlmgr"
-    ]
-  ],
-  "post_install": [
-    "echo \"--> Running tlmgr path add\"",
-    "Start-Process \"cmd.exe\" \"/c `\"$dir\\bin\\win32\\tlmgr.bat path add`\"\" -Wait -NoNewWindow"
-  ],
-  "uninstaller": {
-    "script": [
-      "echo \"--> Running tlmgr path remove\"",
-      "Start-Process \"cmd.exe\" \"/c `\"$dir\\bin\\win32\\tlmgr.bat path remove`\"\" -Wait -NoNewWindow"
-    ]
-  },
-  "checkver": {
-    "github": "https://github.com/yihui/tinytex-releases"
-  },
-  "autoupdate": {
-    "url": "https://github.com/yihui/tinytex-releases/releases/download/v$version/TinyTeX-0.zip"
-  }
+    "description": "A lightweight, cross-platform, portable, and easy-to-maintain LaTeX distribution based on TeX Live. This versions is infra-only and contains no packages.",
+    "homepage": "https://yihui.org/tinytex/",
+    "url": "https://github.com/yihui/tinytex-releases/releases/download/v2020.09/TinyTeX-0.zip",
+    "extract_dir": "TinyTex",
+    "license": "https://tug.org/texlive/LICENSE.TL",
+    "hash": "2d1600560e0ebf609221e481df7adc3a5612d6657d722b7d6364d70a854573f3",
+    "version": "2020.09",
+    "notes": "For full documentation, see https://yihui.org/tinytex/",
+    "bin": [
+        [
+            "bin\\win32\\tlmgr.bat",
+            "tlmgr"
+        ]
+    ],
+    "post_install": [
+        "echo \"--> Running tlmgr path add\"",
+        "Start-Process \"cmd.exe\" \"/c `\"$dir\\bin\\win32\\tlmgr.bat path add`\"\" -Wait -NoNewWindow"
+    ],
+    "uninstaller": {
+        "script": [
+            "echo \"--> Running tlmgr path remove\"",
+            "Start-Process \"cmd.exe\" \"/c `\"$dir\\bin\\win32\\tlmgr.bat path remove`\"\" -Wait -NoNewWindow"
+        ]
+    },
+    "checkver": {
+        "github": "https://github.com/yihui/tinytex-releases"
+    },
+    "autoupdate": {
+        "url": "https://github.com/yihui/tinytex-releases/releases/download/v$version/TinyTeX-0.zip"
+    }
 }
