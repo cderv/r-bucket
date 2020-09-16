@@ -19,6 +19,10 @@ This repos contains some manifests I use to quickly install and update some appl
 * `TinyTex-min` is infra-only and contains only TexLive with no package installed. We recommand this one if you want Texlive for Windows.
 * `TinyTex-full` contains more packages than `TinyTex`.
 
+See full documentation at https://yihui.org/tinytex/ 
+
+The binaries are synced from https://github.com/yihui/tinytex-releases/releases
+
 ## To install scoop 
 
 See https://github.com/lukesampson/scoop
