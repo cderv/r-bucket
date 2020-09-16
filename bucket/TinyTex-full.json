@@ -13,6 +13,10 @@
             "tlmgr"
         ]
     ],
+    "pre_install": [
+      "if (Test-Path $(appdir TinyTex-min)) { throw \"You already have Tinytex installed. Run scoop uninstall TinyTex-min if you want to use TinyTex-full.\"}",
+      "if (Test-Path $(appdir Tinytex)) { throw \"You already have Tinytex installed. Run scoop uninstall Tinytex if you want to use TinyTex-full.\"}",
+    ],
     "post_install": [
         "echo \"--> Running tlmgr path add\"",
         "Start-Process \"cmd.exe\" \"/c `\"$dir\\bin\\win32\\tlmgr.bat path add`\"\" -Wait -NoNewWindow"
