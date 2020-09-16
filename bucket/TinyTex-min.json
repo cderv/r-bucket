@@ -1,0 +1,46 @@
+{
+    "description": "A lightweight, cross-platform, portable, and easy-to-maintain LaTeX distribution based on TeX Live. This versions is infra-only and contains no packages.",
+    "homepage": "https://yihui.org/tinytex/",
+    "url": "https://github.com/yihui/tinytex-releases/releases/download/v2020.09/TinyTeX-0.zip",
+    "extract_dir": "TinyTex",
+    "license": "https://tug.org/texlive/LICENSE.TL",
+    "hash": "2d1600560e0ebf609221e481df7adc3a5612d6657d722b7d6364d70a854573f3",
+    "version": "2020.09",
+    "notes": "For full documentation, see https://yihui.org/tinytex/",
+    "bin": [
+        [
+            "bin\\win32\\tlmgr.bat",
+            "tlmgr"
+        ]
+    ],
+    "pre_install": [
+      "if (Test-Path $(appdir Tinytex)) { throw \"You already have Tinytex installed. Run scoop uninstall Tinytex if you want to use TinyTex-min.\"}",
+      "catch{",
+      "Write-Host \"--> Another TinyTex already found. Cancelling current installation...\" -f red",
+      "scoop uninstall $app",
+      "throw $_",
+      "}",
+      "if (Test-Path $(appdir TinyTex-full)) { throw \"You already have Tinytex-full installed. Run scoop uninstall TinyTex-full if you want to use TinyTex-min.\"}",
+      "catch{",
+      "Write-Host \"--> Another TinyTex already found. Cancelling current installation...\" -f red",
+      "scoop uninstall $app",
+      "throw $_",
+      "}"
+    ],
+    "post_install": [
+        "echo \"--> Running tlmgr path add\"",
+        "Start-Process \"cmd.exe\" \"/c `\"$dir\\bin\\win32\\tlmgr.bat path add`\"\" -Wait -NoNewWindow"
+    ],
+    "uninstaller": {
+        "script": [
+            "echo \"--> Running tlmgr path remove\"",
+            "Start-Process \"cmd.exe\" \"/c `\"$dir\\bin\\win32\\tlmgr.bat path remove`\"\" -Wait -NoNewWindow"
+        ]
+    },
+    "checkver": {
+        "github": "https://github.com/yihui/tinytex-releases"
+    },
+    "autoupdate": {
+        "url": "https://github.com/yihui/tinytex-releases/releases/download/v$version/TinyTeX-0.zip"
+    }
+}

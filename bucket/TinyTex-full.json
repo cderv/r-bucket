@@ -1,0 +1,46 @@
+{
+    "description": "A lightweight, cross-platform, portable, and easy-to-maintain LaTeX distribution based on TeX Live. This versions contains more LaTeX packages.",
+    "homepage": "https://yihui.org/tinytex/",
+    "url": "https://github.com/yihui/tinytex-releases/releases/download/v2020.09/TinyTeX.zip",
+    "extract_dir": "TinyTex",
+    "license": "https://tug.org/texlive/LICENSE.TL",
+    "hash": "48155528145826d790640257269705d8b046e0fd47e640dfa84b59d42181bd22",
+    "version": "2020.09",
+    "notes": "For full documentation, see https://yihui.org/tinytex/.",
+    "bin": [
+        [
+            "bin\\win32\\tlmgr.bat",
+            "tlmgr"
+        ]
+    ],
+    "pre_install": [
+      "if (Test-Path $(appdir TinyTex-min)) { throw \"You already have Tinytex-min installed. Run scoop uninstall TinyTex-min if you want to use TinyTex-full.\"}",
+      "catch{",
+      "Write-Host \"--> Another TinyTex already found. Cancelling current installation...\" -f red",
+      "scoop uninstall $app",
+      "throw $_",
+      "}",
+      "if (Test-Path $(appdir Tinytex)) { throw \"You already have Tinytex installed. Run scoop uninstall Tinytex if you want to use TinyTex-full.\"}",
+      "catch{",
+      "Write-Host \"--> Another TinyTex already found. Cancelling current installation...\" -f red",
+      "scoop uninstall $app",
+      "throw $_",
+      "}"
+    ],
+    "post_install": [
+        "echo \"--> Running tlmgr path add\"",
+        "Start-Process \"cmd.exe\" \"/c `\"$dir\\bin\\win32\\tlmgr.bat path add`\"\" -Wait -NoNewWindow"
+    ],
+    "uninstaller": {
+        "script": [
+            "echo \"--> Running tlmgr path remove\"",
+            "Start-Process \"cmd.exe\" \"/c `\"$dir\\bin\\win32\\tlmgr.bat path remove`\"\" -Wait -NoNewWindow"
+        ]
+    },
+    "checkver": {
+        "github": "https://github.com/yihui/tinytex-releases"
+    },
+    "autoupdate": {
+        "url": "https://github.com/yihui/tinytex-releases/releases/download/v$version/TinyTeX.zip"
+    }
+}
