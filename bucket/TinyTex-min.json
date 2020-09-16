@@ -15,7 +15,17 @@
     ],
     "pre_install": [
       "if (Test-Path $(appdir Tinytex)) { throw \"You already have Tinytex installed. Run scoop uninstall Tinytex if you want to use TinyTex-min.\"}",
+      "catch{",
+      "Write-Host \"--> Another TinyTex already found. Cancelling current installation...\" -f red",
+      "scoop uninstall $app",
+      "throw $_",
+      "}",
       "if (Test-Path $(appdir TinyTex-full)) { throw \"You already have Tinytex-full installed. Run scoop uninstall TinyTex-full if you want to use TinyTex-min.\"}",
+      "catch{",
+      "Write-Host \"--> Another TinyTex already found. Cancelling current installation...\" -f red",
+      "scoop uninstall $app",
+      "throw $_",
+      "}"
     ],
     "post_install": [
         "echo \"--> Running tlmgr path add\"",
