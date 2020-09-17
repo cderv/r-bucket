@@ -20,7 +20,7 @@
       "scoop uninstall $app",
       "throw $_",
       "}",
-      "try{if (Test-Path $(appdir tinytex-full)) { throw \"You already have tinytex-full installed. Run scoop uninstall tinytex-full if you want to use tinytex-min.\"}}",
+      "try{if (Test-Path $(appdir tinytex-extraa)) { throw \"You already havetinytex-extrara installed. Run scoop uninstaltinytex-extratra if you want to use tinytex-min.\"}}",
       "catch{",
       "Write-Host \"--> Another tinytex installation has been found. Cancelling current installation...\" -f red",
       "scoop uninstall $app",

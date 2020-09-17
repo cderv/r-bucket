@@ -14,13 +14,13 @@
         ]
     ],
     "pre_install": [
-      "try{if (Test-Path $(appdir tinytex-min)) { throw \"You already have tinytex-min installed. Run scoop uninstall tinytex-min if you want to use tinytex-full.\"}}",
+      "try{if (Test-Path $(appdir tinytex-min)) { throw \"You already have tinytex-min installed. Run scoop uninstall tinytex-min if you want to use tinytex-extra.\"}}",
       "catch{",
       "Write-Host \"--> Another tinytex installation has been found. Cancelling current installation...\" -f red",
       "scoop uninstall $app",
       "throw $_",
       "}",
-      "try{if (Test-Path $(appdir tinytex)) { throw \"You already have tinytex installed. Run scoop uninstall tinytex if you want to use tinytex-full.\"}}",
+      "try{if (Test-Path $(appdir tinytex)) { throw \"You already have tinytex installed. Run scoop uninstall tinytex if you want to use tinytex-extra.\"}}",
       "catch{",
       "Write-Host \"--> Another tinytex installation has been found. Cancelling current installation...\" -f red",
       "scoop uninstall $app",

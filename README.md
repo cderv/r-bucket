@@ -18,7 +18,7 @@ This repos contains some manifests I use to quickly install and update some appl
 
 * `tinytex` contains [several tex packages already installed](https://github.com/yihui/tinytex/blob/master/tools/pkgs-custom.txt) that are the main one used by Rmarkdown. If you are an R user we recommand this one. 
 * `tinytex-min` is infra-only and contains only Tex Live with no package installed. Use this one if you want only Tex Live for Windows using [TinyTeX distribution](https://yihui.org/tinytex/) without the selected packages, for CI workflow for example. 
-* `tinytex-full` contains more packages than `TinyTeX`.
+* `tinytex-extra` contains some extra packages installed compare to `tinytex`.
 
 See full documentation at https://yihui.org/tinytex/ and about the releases at https://github.com/yihui/tinytex-releases#scoop-package
 
