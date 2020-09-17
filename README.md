@@ -29,7 +29,7 @@ See https://github.com/lukesampson/scoop
 
 ## Add this scoop bucket
 
-```powershel
+```powershell
 scoop bucket add r-bucket https://github.com/cderv/r-bucket.git
 ```
 
