@@ -15,11 +15,11 @@ This repos contains some manifests I use to quickly install and update some appl
 
 3 binaries are available from [tinytex-releases](https://github.com/yihui/tinytex-releases) but only one can be installed at the same time. That is because a _shim_ for `tlmgr` command is added to _scoop_ and available to PATH, and that would be overriden. (And honestly, you only need one). 
 
-* `TinyTeX` contains several tex packages already installed that are the main one used by Rmarkdown. If you are an R user we recommand this one. 
-* `TinyTeX-min` is infra-only and contains only TexLive with no package installed. We recommand this one if you want Texlive for Windows.
-* `TinyTeX-full` contains more packages than `TinyTeX`.
+* `tinytex` contains [several tex packages already installed](https://github.com/yihui/tinytex/blob/master/tools/pkgs-custom.txt) that are the main one used by Rmarkdown. If you are an R user we recommand this one. 
+* `tinytex-min` is infra-only and contains only Tex Live with no package installed. Use this one if you want only Tex Live for Windows using [TinyTeX distribution](https://yihui.org/tinytex/) without the selected packages, for CI workflow for example. 
+* `tinytex-full` contains more packages than `TinyTeX`.
 
-See full documentation at https://yihui.org/tinytex/ and about the releases at : https://github.com/yihui/tinytex-releases#scoop-package
+See full documentation at https://yihui.org/tinytex/ and about the releases at https://github.com/yihui/tinytex-releases#scoop-package
 
 The binaries are synced from https://github.com/yihui/tinytex-releases/releases
 
