@@ -1,10 +1,10 @@
 {
     "homepage": "https://www.r-project.org",
     "description": "A free software environment for statistical computing and graphics.",
-    "version": "4.0.2",
+    "version": "devel",
     "license": "GPL-2.0-only",
-    "url": "https://cloud.r-project.org/bin/windows/base/R-4.0.2-win.exe",
-    "hash": "md5:fd392a9a5d15d5fab4f069fa55c5c128",
+    "url": "https://cran.r-project.org/bin/windows/base/R-devel-win.exe",
+    "hash": "183a69e53b35df320a24915af2181b7ebb9f0a335a33f641fcd40d1ed8af21cb",
     "innosetup": true,
     "architecture": {
         "64bit": {
@@ -74,14 +74,11 @@
         "",
         "Annoying, right?! You might want to check out Pshazz (scoop install pshazz)--this has a plugin to remove some crazy aliases from Powershell, as well as many other improvements."
     ],
-    "checkver": {
-        "url": "https://cloud.r-project.org/bin/windows/base/md5sum.txt",
-        "regex": "R-([\\d.]+)"
-    },
-    "autoupdate": {
-        "url": "https://cloud.r-project.org/bin/windows/base/R-$version-win.exe",
-        "hash": {
-            "url": "$baseurl/md5sum.txt"
-        }
-    }
+  "autoupdate": {
+      "url": "https://cloud.r-project.org/bin/windows/base/R-$version-win.exe",
+      "hash": {
+          "url": "$baseurl/md5sum.txt"
+      }
+  }
+
 }
