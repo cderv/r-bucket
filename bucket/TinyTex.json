@@ -2,7 +2,7 @@
   "description": "A lightweight, cross-platform, portable, and easy-to-maintain LaTeX distribution based on TeX Live. This versions contains enough LaTeX packages to compile R Markdown documents. More can be installed by the user.",  
   "homepage": "https://yihui.org/tinytex/",
   "url": "https://github.com/yihui/tinytex-releases/releases/download/v2020.09/TinyTeX-1.zip",
-  "extract_dir": "TinyTex",
+  "extract_dir": "TinyTeX",
   "license": "https://tug.org/texlive/LICENSE.TL",
   "hash": "15723290e2f8ba38a87970b7d9c4e0fa0d52d6236c6eabb9a8b534bad7843ff5",
   "version": "2020.09",
@@ -14,15 +14,15 @@
     ]
   ],
   "pre_install": [
-    "try{if (Test-Path $(appdir TinyTex-min)) { throw \"You already have Tinytex-min installed. Run scoop uninstall TinyTex-min if you want to use TinyTex.\"}}",
+    "try{if (Test-Path $(appdir TinyTeX-min)) { throw \"You already have Tinytex-min installed. Run scoop uninstall TinyTeX-min if you want to use TinyTeX.\"}}",
     "catch{",
-    "Write-Host \"--> Another TinyTex already found. Cancelling current installation...\" -f red",
+    "Write-Host \"--> Another TinyTeX already found. Cancelling current installation...\" -f red",
     "scoop uninstall $app",
     "throw $_",
     "}",
-    "if (Test-Path $(appdir TinyTex-full)) { throw \"You already have Tinytex-full installed. Run scoop uninstall TinyTex-full if you want to use TinyTex.\"}",
+    "if (Test-Path $(appdir TinyTeX-full)) { throw \"You already have Tinytex-full installed. Run scoop uninstall TinyTeX-full if you want to use TinyTeX.\"}",
     "catch{",
-    "Write-Host \"--> Another TinyTex already found. Cancelling current installation...\" -f red",
+    "Write-Host \"--> Another TinyTeX already found. Cancelling current installation...\" -f red",
     "scoop uninstall $app",
     "throw $_",
     "}"

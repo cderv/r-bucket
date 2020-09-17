@@ -11,13 +11,13 @@ This repos contains some manifests I use to quickly install and update some appl
 * RStudio 1.2 (installer-less) 
 * RStudio daily (installer-less) - Synced from https://dailies.rstudio.com/
 
-### TinyTex - TexLive distribution (Experimental - this could change)
+### TinyTeX - TexLive distribution (Experimental - this could change)
 
 3 binaries are available from [tinytex-releases](https://github.com/yihui/tinytex-releases) but only one can be installed at the same time. That is because a _shim_ for `tlmgr` command is added to _scoop_ and available to PATH, and that would be overriden. (And honestly, you only need one). 
 
-* `TinyTex` contains several tex packages already installed that are the main one used by Rmarkdown. If you are an R user we recommand this one. 
-* `TinyTex-min` is infra-only and contains only TexLive with no package installed. We recommand this one if you want Texlive for Windows.
-* `TinyTex-full` contains more packages than `TinyTex`.
+* `TinyTeX` contains several tex packages already installed that are the main one used by Rmarkdown. If you are an R user we recommand this one. 
+* `TinyTeX-min` is infra-only and contains only TexLive with no package installed. We recommand this one if you want Texlive for Windows.
+* `TinyTeX-full` contains more packages than `TinyTeX`.
 
 See full documentation at https://yihui.org/tinytex/ and about the releases at : https://github.com/yihui/tinytex-releases#scoop-package
 
@@ -37,7 +37,7 @@ scoop bucket add r-bucket https://github.com/cderv/r-bucket.git
 
 ```powershell
 scoop install rstudio-daily
-scoop install TinyTex
+scoop install TinyTeX
 ```
 
 ## List installed apps
