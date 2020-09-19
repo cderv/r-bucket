@@ -7,12 +7,6 @@
     "hash": "48155528145826d790640257269705d8b046e0fd47e640dfa84b59d42181bd22",
     "version": "2020.09",
     "notes": "For full documentation, see https://yihui.org/tinytex/.",
-    "bin": [
-        [
-            "bin\\win32\\tlmgr.bat",
-            "tlmgr"
-        ]
-    ],
     "pre_install": [
       "try{if (Test-Path $(appdir tinytex-min)) { throw \"You already have tinytex-min installed. Run scoop uninstall tinytex-min if you want to use tinytex-extra.\"}}",
       "catch{",
