@@ -35,6 +35,6 @@
         "github": "https://github.com/yihui/tinytex-releases"
     },
     "autoupdate": {
-        "url": "https://github.com/yihui/tinytex-releases/releases/download/v$version/TinyTeX.zip"
+        "url": "https://github.com/yihui/tinytex-releases/releases/download/v$version/TinyTeX-v$version.zip"
     }
 }
