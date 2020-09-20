@@ -1,40 +1,40 @@
-		{
-  "description": "A lightweight, cross-platform, portable, and easy-to-maintain LaTeX distribution based on TeX Live. This versions contains enough LaTeX packages to compile R Markdown documents. More can be installed by the user.",  
-  "homepage": "https://yihui.org/tinytex/",
-  "url": "https://github.com/yihui/tinytex-releases/releases/download/v2020.09/TinyTeX-1.zip",
-  "extract_dir": "TinyTeX",
-  "license": "https://tug.org/texlive/LICENSE.TL",
-  "hash": "15723290e2f8ba38a87970b7d9c4e0fa0d52d6236c6eabb9a8b534bad7843ff5",
-  "version": "2020.09",
-  "notes": "For full documentation, see https://yihui.org/tinytex/",
-  "pre_install": [
-    "try{if (Test-Path $(appdir tinytex-min)) { throw \"You already have Tinytex-min installed. Run scoop uninstall tinytex-min if you want to use TinyTeX.\"}}",
-    "catch{",
-    "Write-Host \"--> Another tinytex installation has been already found. Cancelling current installation...\" -f red",
-    "scoop uninstall $app",
-    "throw $_",
-    "}",
-    "try{if (Test-Path $(appdir tinytex-extra)) { throw \"You already have Tinytex-full installed. Run scoop uninstall tinytex-extra if you want to use TinyTeX.\"}}",
-    "catch{",
-    "Write-Host \"--> Another tinytex installation has been found. Cancelling current installation...\" -f red",
-    "scoop uninstall $app",
-    "throw $_",
-    "}"
-  ],
-  "post_install": [
-    "echo \"--> Running tlmgr path add\"",
-    "Start-Process \"cmd.exe\" \"/c `\"$dir\\bin\\win32\\tlmgr.bat path add`\"\" -Wait -NoNewWindow"
-  ],
-  "uninstaller": {
-    "script": [
-      "echo \"--> Running tlmgr path remove\"",
-      "Start-Process \"cmd.exe\" \"/c `\"$dir\\bin\\win32\\tlmgr.bat path remove`\"\" -Wait -NoNewWindow"
-    ]
-  },
-  "checkver": {
-    "github": "https://github.com/yihui/tinytex-releases"
-  },
-  "autoupdate": {
-    "url": "https://github.com/yihui/tinytex-releases/releases/download/v$version/TinyTeX-1-v$version.zip"
-  }
+{
+    "description": "A lightweight, cross-platform, portable, and easy-to-maintain LaTeX distribution based on TeX Live. This versions contains enough LaTeX packages to compile R Markdown documents. More can be installed by the user.",
+    "homepage": "https://yihui.org/tinytex/",
+    "url": "https://github.com/yihui/tinytex-releases/releases/download/v2020.09.19/TinyTeX-1-v2020.09.19.zip",
+    "extract_dir": "TinyTeX",
+    "license": "https://tug.org/texlive/LICENSE.TL",
+    "hash": "250d36b3b4352d4df1ca575b19448bbe0995a48da4b5098f83ad3f281de8f22e",
+    "version": "2020.09.19",
+    "notes": "For full documentation, see https://yihui.org/tinytex/",
+    "pre_install": [
+        "try{if (Test-Path $(appdir tinytex-min)) { throw \"You already have Tinytex-min installed. Run scoop uninstall tinytex-min if you want to use TinyTeX.\"}}",
+        "catch{",
+        "Write-Host \"--> Another tinytex installation has been already found. Cancelling current installation...\" -f red",
+        "scoop uninstall $app",
+        "throw $_",
+        "}",
+        "try{if (Test-Path $(appdir tinytex-extra)) { throw \"You already have Tinytex-full installed. Run scoop uninstall tinytex-extra if you want to use TinyTeX.\"}}",
+        "catch{",
+        "Write-Host \"--> Another tinytex installation has been found. Cancelling current installation...\" -f red",
+        "scoop uninstall $app",
+        "throw $_",
+        "}"
+    ],
+    "post_install": [
+        "echo \"--> Running tlmgr path add\"",
+        "Start-Process \"cmd.exe\" \"/c `\"$dir\\bin\\win32\\tlmgr.bat path add`\"\" -Wait -NoNewWindow"
+    ],
+    "uninstaller": {
+        "script": [
+            "echo \"--> Running tlmgr path remove\"",
+            "Start-Process \"cmd.exe\" \"/c `\"$dir\\bin\\win32\\tlmgr.bat path remove`\"\" -Wait -NoNewWindow"
+        ]
+    },
+    "checkver": {
+        "github": "https://github.com/yihui/tinytex-releases"
+    },
+    "autoupdate": {
+        "url": "https://github.com/yihui/tinytex-releases/releases/download/v$version/TinyTeX-1-v$version.zip"
+    }
 }
