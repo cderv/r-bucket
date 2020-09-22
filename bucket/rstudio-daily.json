@@ -1,12 +1,12 @@
 {
-    "version": "1.4.854",
+    "version": "1.4.856",
     "homepage": "https://www.rstudio.com/",
     "description": "An IDE for R, which includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.",
     "license": "AGPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-1.4.854.zip",
-            "hash": "a4f39193a817973d6a7a95d4e6c1115556bd4fda92e6b194217ffee670e473d3"
+            "url": "https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-1.4.856.zip",
+            "hash": "fe0216925f816457a6b123ea1c51a5f74f5d2b7a0c3fd2afb9a3ab85373b004f"
         }
     },
     "bin": [
