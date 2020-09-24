@@ -19,11 +19,21 @@
         "Write-Host \"--> Another tinytex installation has been found. Cancelling current installation...\" -f red",
         "scoop uninstall $app",
         "throw $_",
-        "}"
+        "}",
+        "if (Test-Path \"$dir\\current\\bin\\win32\\tlmgr.bat\") {tlmgr info --list --only-installed --data name > $env:TMP/tinytex-pkg-installed.txt}"
     ],
     "post_install": [
         "echo \"--> Running tlmgr path add\"",
-        "Start-Process \"cmd.exe\" \"/c `\"$dir\\bin\\win32\\tlmgr.bat path add`\"\" -Wait -NoNewWindow"
+        "Start-Process \"cmd.exe\" \"/c `\"$dir\\bin\\win32\\tlmgr.bat path add`\"\" -Wait -NoNewWindow",
+        "echo \"--> Updating tlmgr itself\"",
+        "tlmgr update --self",
+        "if (Test-Path $env:TMP/tinytex-pkg-installed.txt) {",
+        "echo \"--> Reinstalling previous user package\"",
+        "$tinytex_pkg_installed = (tlmgr info --list --only-installed --data name)",
+        "((Get-Content $env:TMP/tinytex-pkg-installed.txt) | Where { $tinytex_pkg_installed -NotContains $_}) | % {\"tlmgr install {0}\" -f $_} > $env:TMP/installed_old_packages.ps1",
+        "Invoke-Expression \"$env:TMP/installed_old_packages.ps1\"",
+        "Remove-Item $env:TMP/installed_old_packages.ps1 $env:TMP/tinytex-pkg-installed.txt",
+        "}"
     ],
     "uninstaller": {
         "script": [
