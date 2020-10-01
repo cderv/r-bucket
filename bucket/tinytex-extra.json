@@ -23,10 +23,24 @@
     ],
     "post_install": [
         "echo \"--> Running tlmgr path add\"",
-        "Start-Process \"cmd.exe\" \"/c `\"$dir\\bin\\win32\\tlmgr.bat path add`\"\" -Wait -NoNewWindow"
+        "Start-Process \"cmd.exe\" \"/c `\"$dir\\bin\\win32\\tlmgr.bat path add`\"\" -Wait -NoNewWindow",
+        "echo \"--> Updating tlmgr itself\"",
+        "tlmgr update --self",
+        "if (Test-Path $env:TMP\\tinytex-pkg-installed-$(Get-Date -Format ddMMyyHH).txt) {",
+        "$tinytex_tmp_file=\"$env:TMP\\tinytex-pkg-installed-$(Get-Date -Format ddMMyyHH).txt\"",
+        "$tinytex_pkg_installed = (tlmgr info --list --only-installed --data name)",
+        "$tinytex_reinstall=\"$env:TMP\\installed_old_packages.ps1\"",
+        "((Get-Content $tinytex_tmp_file) | Where { $tinytex_pkg_installed -NotContains $_}) | % {\"tlmgr install {0}\" -f $_} > $tinytex_reinstall",
+        "if ((Get-Content $tinytex_reinstall) -ne $null) {",
+        "echo \"--> Reinstalling previous user packages\"",
+        "Invoke-Expression \"$tinytex_reinstall\"",
+        "}",
+        "Remove-Item $env:TMP/installed_old_packages.ps1, $tinytex_tmp_file",
+        "}"
     ],
     "uninstaller": {
         "script": [
+            "tlmgr info --list --only-installed --data name > $env:TMP/tinytex-pkg-installed-$(Get-Date -Format ddMMyyHH).txt",
             "echo \"--> Running tlmgr path remove\"",
             "Start-Process \"cmd.exe\" \"/c `\"$dir\\bin\\win32\\tlmgr.bat path remove`\"\" -Wait -NoNewWindow"
         ]
