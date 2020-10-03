@@ -1,10 +1,10 @@
 {
     "homepage": "https://cran.r-project.org/bin/windows/base/rdevel.html",
     "description": "A free software environment for statistical computing and graphics.",
-    "version": "devel",
+    "version": "r79291",
     "license": "GPL-2.0-only",
-    "url": "https://cran.r-project.org/bin/windows/base/R-devel-win.exe",
-    "hash": "183a69e53b35df320a24915af2181b7ebb9f0a335a33f641fcd40d1ed8af21cb",
+    "url": "https://cloud.r-project.org/bin/windows/base/R-devel-win.exe",
+    "hash": "1b41bbe7f6ad5558ec983228865c52d21ef0d57a6e150f920e206ef9625902e9",
     "innosetup": true,
     "architecture": {
         "64bit": {
@@ -19,7 +19,7 @@
             "shortcuts": [
                 [
                     "bin\\x64\\Rgui.exe",
-                    "R"
+                    "R-devel"
                 ]
             ]
         },
@@ -35,7 +35,7 @@
             "shortcuts": [
                 [
                     "bin\\i386\\Rgui.exe",
-                    "R"
+                    "R-devel"
                 ]
             ]
         }
@@ -74,11 +74,14 @@
         "",
         "Annoying, right?! You might want to check out Pshazz (scoop install pshazz)--this has a plugin to remove some crazy aliases from Powershell, as well as many other improvements."
     ],
-  "autoupdate": {
-      "url": "https://cloud.r-project.org/bin/windows/base/R-$version-win.exe",
-      "hash": {
-          "url": "$baseurl/md5sum.txt"
-      }
-  }
-
+    "checkver": {
+        "url": "https://cran.r-project.org/bin/windows/base/rdevel.html",
+        "regex": "(r\\d+)"
+    },
+    "autoupdate": {
+        "url": "https://cloud.r-project.org/bin/windows/base/R-devel-win.exe",
+        "hash": {
+            "url": "$baseurl/md5sum.txt"
+        }
+    }
 }
