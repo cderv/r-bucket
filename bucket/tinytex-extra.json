@@ -1,11 +1,11 @@
 {
     "description": "A lightweight, cross-platform, portable, and easy-to-maintain LaTeX distribution based on TeX Live. This versions contains more LaTeX packages.",
     "homepage": "https://yihui.org/tinytex/",
-    "url": "https://github.com/yihui/tinytex-releases/releases/download/v2020.09.19/TinyTeX-v2020.09.19.zip",
+    "url": "https://github.com/yihui/tinytex-releases/releases/download/v2020.10/TinyTeX-v2020.10.zip",
     "extract_dir": "TinyTeX",
     "license": "https://tug.org/texlive/LICENSE.TL",
-    "hash": "12e6897e46d30b19fda3891b24f1a76c28ec6dee28821954f038e274195c27b1",
-    "version": "2020.09.19",
+    "hash": "e2e4d6627b0362a8a40d56687be2343bae54baebe6b9eebdd4b2cbbe20eb3cca",
+    "version": "2020.10",
     "notes": "For full documentation, see https://yihui.org/tinytex/.",
     "pre_install": [
         "try{if (Test-Path $(appdir tinytex-min)) { throw \"You already have tinytex-min installed. Run scoop uninstall tinytex-min if you want to use tinytex-extra.\"}}",
