@@ -1,11 +1,11 @@
 {
     "description": "A lightweight, cross-platform, portable, and easy-to-maintain LaTeX distribution based on TeX Live. This versions contains enough LaTeX packages to compile R Markdown documents. More can be installed by the user.",
     "homepage": "https://yihui.org/tinytex/",
-    "url": "https://github.com/yihui/tinytex-releases/releases/download/v2020.12/TinyTeX-1-v2020.12.zip",
+    "url": "https://github.com/yihui/tinytex-releases/releases/download/v2021.01/TinyTeX-1-v2021.01.zip",
     "extract_dir": "TinyTeX",
     "license": "https://tug.org/texlive/LICENSE.TL",
-    "hash": "781857a3f6ffa75cbfe3040eb74b6e4168707b9e2b492a8209587663eb04acfa",
-    "version": "2020.12",
+    "hash": "6395d0708027b1d31dfe29af4ffb4e1c152e6b07fb4b496aa39055cde7f8166d",
+    "version": "2021.01",
     "notes": "For full documentation, see https://yihui.org/tinytex/",
     "pre_install": [
         "try{if (Test-Path $(appdir tinytex-min)) { throw \"You already have Tinytex-min installed. Run scoop uninstall tinytex-min if you want to use TinyTeX.\"}}",
