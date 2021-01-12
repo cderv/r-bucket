@@ -8,9 +8,9 @@ This repos contains some manifests I use to quickly install and update some appl
 
 ### RStudio IDE 
 
-* RStudio 1.2 (installer-less) - Last available 1.2 version
-* RStudio daily (installer-less) - Synced from https://dailies.rstudio.com/
-* RStudio Preview (installer-less) - Synced from https://rstudio.com/products/rstudio/download/preview/
+* `rstudio-1.2`: RStudio 1.2 (installer-less) - Last available 1.2 version
+* `rstudio-daily`: RStudio daily (installer-less) - Synced from https://dailies.rstudio.com/
+* `rstudio-preview`: RStudio Preview (installer-less) - Synced from https://rstudio.com/products/rstudio/download/preview/
 
 ### TinyTeX - Tex Live distribution
 > Experimental - this could still change
