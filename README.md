@@ -74,6 +74,8 @@ scoop list
 scoop update
 scoop status
 scoop update rstudio-daily
+# update all 
+scoop update *
 ```
 
 ## Uninstall an app
