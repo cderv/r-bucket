@@ -25,6 +25,26 @@ See full documentation at https://yihui.org/tinytex/ and about the releases at h
 
 The binaries are synced from https://github.com/yihui/tinytex-releases/releases
 
+### R devel 
+
+You can install R devel for Windows using this bucket containing the `r-devel` app. The version will be synced to https://cran.r-project.org/bin/windows/base/rdevel.html and you will always have the last available r-devel version, tracked by the version notation like r79818 for the current development snapshot of R. As any other app, a new version will be checked for daily. 
+
+This scoop installed app will behave like with the apps in the _Versions_ bucket (https://github.com/ScoopInstaller/Versions): You can have several versions of R installed with scoop but only one in use. You will have to use [`scoop reset`](https://scoop-docs.now.sh/docs/misc/Switching-Ruby-and-Python-Versions.html#scoop-reset) to switch between installed versions.
+
+```powershell
+# from this bucket
+scoop install r-devel
+rterm --version # r-devel
+
+# from the main bucket
+scoop install r
+rterm --version # r release
+
+# switching back to use r-devel
+scoop reset r-devel
+rterm --version # r-devel
+```
+
 ## To install scoop 
 
 See https://github.com/lukesampson/scoop
