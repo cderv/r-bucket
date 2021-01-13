@@ -71,8 +71,11 @@ scoop list
 ## Update an app
 
 ```powershell
+# fetch update info
 scoop update
+# see outdated apps
 scoop status
+# update one app
 scoop update rstudio-daily
 # update all 
 scoop update *
