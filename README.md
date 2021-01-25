@@ -25,7 +25,30 @@ See full documentation at https://yihui.org/tinytex/ and about the releases at h
 
 The binaries are synced from https://github.com/yihui/tinytex-releases/releases
 
-### R devel 
+### R versions
+
+#### R release and old releases
+
+You can install R current release using 
+
+```powershell
+scoop install r-release
+```
+
+but you can also install previous release using 
+
+```powershell
+scoop install r-release@3.5.2
+```
+
+You can then switch between R versions (including r-devel - see below) using 
+
+```powershell
+scoop reset r-release
+scoop reset r-release@3.5.2
+```
+
+#### R devel
 
 You can install R devel for Windows using this bucket containing the `r-devel` app. The version will be synced to https://cran.r-project.org/bin/windows/base/rdevel.html and you will always have the last available r-devel version, tracked by the version notation like r79818 for the current development snapshot of R. As any other app, a new version will be checked for daily. 
 
@@ -37,8 +60,8 @@ scoop install r-devel
 rterm --version # r-devel
 
 # from the main bucket
-scoop install r
-rterm --version # r release
+scoop install r-release
+rterm --version # r current release
 
 # switching back to use r-devel
 scoop reset r-devel
