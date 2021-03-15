@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-pro-1.4.1626-1.zip",
-            "hash": "6bde409a81e1260450bf6feb1737c4aa462b9ba4c5b2a5f30f7ca2a81a5d86b0"
+            "hash": "01efc49ed27748c7e7d0e47e1ccd41971d947f655323b8211f46bff3fa4c6e4b"
         }
     },
     "bin": [
