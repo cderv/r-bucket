@@ -9,6 +9,7 @@ This repos contains some manifests I use to quickly install and update some appl
 ### RStudio IDE 
 
 * `rstudio-1.2`: RStudio 1.2 (installer-less) - Freezed to last available 1.2 version
+* `rstudio-1.3`: RStudio 1.3 (installer-less) - Freezed to last available 1.3 version
 * `rstudio-daily`: RStudio daily (installer-less) - Synced from https://dailies.rstudio.com/
 * `rstudio-preview`: RStudio Preview (installer-less) - Synced from https://rstudio.com/products/rstudio/download/preview/
 
