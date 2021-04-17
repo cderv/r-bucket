@@ -1,10 +1,10 @@
 {
     "homepage": "https://cran.r-project.org/bin/windows/base/rdevel.html",
     "description": "A free software environment for statistical computing and graphics.",
-    "version": "r80175",
+    "version": "r80179",
     "license": "GPL-2.0-only",
     "url": "https://cloud.r-project.org/bin/windows/base/R-devel-win.exe",
-    "hash": "2086576f909548ee4117ac80fcaacce073925c885a2e2ceb30d201a277434a41",
+    "hash": "7726bdba6f28634058a9aa5db273ae44e2ac4b91f78649fd3e08ff9da9f15914",
     "innosetup": true,
     "architecture": {
         "64bit": {
