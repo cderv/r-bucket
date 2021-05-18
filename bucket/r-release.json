@@ -1,10 +1,10 @@
 {
     "homepage": "https://cran.r-project.org/bin/windows/base/old/index.html",
     "description": "A free software environment for statistical computing and graphics.",
-    "version": "4.0.5",
+    "version": "4.1.0",
     "license": "GPL-2.0-only",
-    "url": "https://cran.r-project.org/bin/windows/base/old/4.0.5/R-4.0.5-win.exe",
-    "hash": "md5:385b1e6db9ba1c3b7349e6459e91ba6d",
+    "url": "https://cran.r-project.org/bin/windows/base/old/4.1.0/R-4.1.0-win.exe",
+    "hash": "md5:c15084c4902c604fd71bddd01f3189fd",
     "innosetup": true,
     "architecture": {
         "64bit": {
