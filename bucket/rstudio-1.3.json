@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://download1.rstudio.org/desktop/windows/RStudio-1.3.1093.zip",
-            "hash": "76a7c2f2b6fc129f27bf70ea4a535175a839bd73065eba06ffcf78f1134bc2bf"
+            "hash": "4abe0f7735dbf63bf2391a854ae39d6d09d9a101328c6f7f80c833504be3a987"
         }
     },
     "bin": [
