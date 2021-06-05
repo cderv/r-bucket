@@ -1,11 +1,11 @@
 {
     "description": "A lightweight, cross-platform, portable, and easy-to-maintain LaTeX distribution based on TeX Live. This versions is infra-only and contains no packages.",
     "homepage": "https://yihui.org/tinytex/",
-    "url": "https://github.com/yihui/tinytex-releases/releases/download/v2021.05/TinyTeX-0-v2021.05.zip",
+    "url": "https://github.com/yihui/tinytex-releases/releases/download/v2021.06/TinyTeX-0-v2021.06.zip",
     "extract_dir": "TinyTeX",
     "license": "https://tug.org/texlive/LICENSE.TL",
-    "hash": "585313d8546fc4b224809a12570163ecbccf0d2788952a9693e35ed5c533c872",
-    "version": "2021.05",
+    "hash": "056625832821f2f1d618c6166823acdfdc60498801abc37d86e6a011c8a51eb7",
+    "version": "2021.06",
     "notes": "For full documentation, see https://yihui.org/tinytex/",
     "pre_install": [
         "try{if (Test-Path $(appdir tinytex)) { throw \"You already have tinytex installed. Run scoop uninstall tinytex if you want to use tinytex-min.\"}}",
