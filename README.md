@@ -1,11 +1,25 @@
 ![](https://github.com/cderv/r-bucket/workflows/Excavator/badge.svg)
-
 # Scoop bucket for an R user
 
 This repos contains some manifests I use to quickly install and update some applications useful for an R user that I don't find in any other bucket.
 
-## Apps in this bucket
+- [Scoop bucket for an R user](#scoop-bucket-for-an-r-user)
+  - [Apps in this bucket](#apps-in-this-bucket)
+    - [RStudio IDE](#rstudio-ide)
+    - [TinyTeX - Tex Live distribution](#tinytex---tex-live-distribution)
+    - [R versions](#r-versions)
+      - [R release and old releases](#r-release-and-old-releases)
+      - [R devel](#r-devel)
+    - [Quarto CLI](#quarto-cli)
+  - [To install scoop](#to-install-scoop)
+  - [Add this scoop bucket](#add-this-scoop-bucket)
+  - [Install an app](#install-an-app)
+  - [List installed apps](#list-installed-apps)
+  - [Update an app](#update-an-app)
+  - [Uninstall an app](#uninstall-an-app)
+  - [check if a tools is found in PATH](#check-if-a-tools-is-found-in-path)
 
+## Apps in this bucket
 ### RStudio IDE 
 
 * `rstudio-1.2`: RStudio 1.2 (installer-less) - Freezed to last available 1.2 version
