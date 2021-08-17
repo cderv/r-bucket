@@ -23,7 +23,7 @@
     ],
     "checkver": {
         "url": "https://dailies.rstudio.com/rstudio/oss/windows/xcopy/",
-        "regex": "RStudio-([\\d.]+).zip"
+        "regex": "RStudio-([\\d.-]+).zip"
     },
     "autoupdate": {
         "architecture": {
