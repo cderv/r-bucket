@@ -1,12 +1,12 @@
 {
-    "version": "2021.09.0-preview%2B338.pro1",
+    "version": "1.4.1725-2",
     "homepage": "https://www.rstudio.com/",
     "description": "An IDE for R, which includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.",
     "license": "https://rstudio.com/about/eula/",
     "architecture": {
         "64bit": {
-            "url": "https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-pro-2021.09.0-preview%2B338.pro1.exe",
-            "hash": "889ee9df265cf549f2920fc33029bddffe32f596fe1212d3e311fa37b66c421a"
+            "url": "https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-pro-1.4.1725-2.exe",
+            "hash": "6f1fa924a7728d6ea25b0ca0ca266c07df0619163c10dc5c850b19cea5c488cb"
         }
     },
     "bin": [
@@ -22,9 +22,8 @@
         ]
     ],
     "checkver": {
-        "url": "https://www.rstudio.com/products/rstudio/download/preview/",
-        "regex": "RStudio Pro ([\\d.]+)-preview(?:&#43;)(\\d+\\.pro\\d+) - Windows",
-        "replace": "${1}-preview%2B${2}"
+        "url": "https://rstudio.com/products/rstudio/download/preview/",
+        "regex": "RStudio v([\\d.]+(-\\d)?) Preview"
     },
     "autoupdate": {
         "architecture": {
