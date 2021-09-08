@@ -87,7 +87,7 @@ rterm --version # r-devel
 
 Quarto (https://quarto.org/) is an open-source scientific and technical publishing system built on Pandoc. Quarto documents are authored using markdown, an easy to write plain text format.
 
-This bucket contains the manifest to install and update easily the [quarto CLI][https://github.com/quarto-dev/quarto-cli/releases] for Windows. 
+This bucket contains the manifest to install and update easily the [quarto CLI](https://github.com/quarto-dev/quarto-cli/releases) for Windows. 
 
 **Quarto is still in heavy development and the last available daily build will be installed**
 
