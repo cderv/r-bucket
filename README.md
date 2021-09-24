@@ -18,10 +18,8 @@ This repos contains some manifests I use to quickly install and update some appl
   - [Update an app](#update-an-app)
   - [Uninstall an app](#uninstall-an-app)
   - [check if a tools is found in PATH](#check-if-a-tools-is-found-in-path)
-    - [age](#age)
 
 ## Apps in this bucket
-
 ### RStudio IDE 
 
 * `rstudio-1.2`: RStudio 1.2 (installer-less) - Freezed to last available 1.2 version
@@ -147,14 +145,4 @@ scoop uninstall rstudio-daily
 
 ```powershell
 scoop which tlmgr
-```
-
-### age
-
-https://github.com/FiloSottile/age
-
-> A simple, modern and secure encryption tool (and Go library) with small explicit keys, no config options, and UNIX-style composability.
-
-```powershell
-scoop install age
 ```
