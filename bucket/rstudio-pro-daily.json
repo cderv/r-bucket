@@ -5,7 +5,7 @@
     "license": "https://rstudio.com/about/eula/",
     "architecture": {
         "64bit": {
-            "url": "https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-pro-2022.01.1-daily%2B171.pro1.zip",
+            "url": "https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-pro-2022.01.1-daily-171.pro1.zip",
             "hash": "c3d526fc3b291f6acc6a0b3db4b0a4d8de58bb11efcab0c998b2578ba0559d2c"
         }
     },
@@ -30,7 +30,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-pro-$matchDate$matchType%2B$matchBuild$matchPro.zip",
+                "url": "https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-pro-$matchDate$matchType-matchBuild$matchPro.zip",
                 "hash": {
                     "mode": "json",
                     "jsonpath": ".products['desktop-pro'].platforms['windows-xcopy'].sha256",

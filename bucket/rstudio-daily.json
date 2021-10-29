@@ -5,7 +5,7 @@
     "license": "AGPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-2022.01.1-daily%2B172.zip",
+            "url": "https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-2022.01.1-daily-172.zip",
             "hash": "7bb3dc1e4d95a7edfe2f8ed82553cbee407790c848515f49d6c118e47940bf1f"
         }
     },
@@ -30,7 +30,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-$matchDate$matchType%2B$matchBuild.zip",
+                "url": "https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-$matchDate$matchType-$matchBuild.zip",
                 "hash": {
                     "mode": "json",
                     "jsonpath": ".products.desktop.platforms['windows-xcopy'].sha256",
