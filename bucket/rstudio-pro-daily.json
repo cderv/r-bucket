@@ -30,7 +30,12 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-pro-$matchDate$matchType%2B$matchBuild$matchPro.zip"
+                "url": "https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-pro-$matchDate$matchType%2B$matchBuild$matchPro.zip",
+                "hash": {
+                    "mode": "json",
+                    "jsonpath": ".products['desktop-pro'].platforms['windows-xcopy'].sha256",
+                    "url": "https://dailies.rstudio.com/rstudio/latest/index.json"
+                }
             }
         }
     }
