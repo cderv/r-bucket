@@ -1,10 +1,10 @@
 {
-    "version": "0.2.456",
+    "version": "0.2.457",
     "description": "Quarto is an academic, scientific, and technical publishing system built on Pandoc.",
     "homepage": "https://github.com/quarto-dev/quarto-cli/wiki",
     "license": "GPL-2.0-or-later",
-    "url": "https://github.com/quarto-dev/quarto-cli/releases/download/v0.2.456/quarto-0.2.456-win.msi",
-    "hash": "a89a011fc9702eba5cf9a80514e0e55b70beb2b040a286fbf2e035f1859182a6",
+    "url": "https://github.com/quarto-dev/quarto-cli/releases/download/v0.2.457/quarto-0.2.457-win.msi",
+    "hash": "37bf2ea0ae8bfe3a5fbb24684d910c1309b470c1201896fa72f2b893aa92f81e",
     "extract_dir": "Quarto",
     "bin": "bin\\quarto.cmd",
     "checkver": {
