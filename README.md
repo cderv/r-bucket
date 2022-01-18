@@ -6,6 +6,10 @@ This repos contains some manifests I use to quickly install and update some appl
 - [Scoop bucket for an R user](#scoop-bucket-for-an-r-user)
   - [Apps in this bucket](#apps-in-this-bucket)
     - [RStudio IDE](#rstudio-ide)
+      - [Daily versions](#daily-versions)
+      - [Preview versions](#preview-versions)
+      - [Released versions](#released-versions)
+      - [Branched versions](#branched-versions)
     - [TinyTeX - Tex Live distribution](#tinytex---tex-live-distribution)
     - [R versions](#r-versions)
       - [R release and old releases](#r-release-and-old-releases)
@@ -22,10 +26,31 @@ This repos contains some manifests I use to quickly install and update some appl
 ## Apps in this bucket
 ### RStudio IDE 
 
+#### Daily versions
+
+* `rstudio-daily`: RStudio daily (installer-less) - Synced from https://dailies.rstudio.com/
+* `rstudio-pro-daily`: RStudio Pro daily (installer-less) - Synced from https://dailies.rstudio.com/
+
+#### Preview versions
+
+* `rstudio-preview`: RStudio Preview (installer-less) - Synced from https://rstudio.com/products/rstudio/download/preview/
+* `rstudio-pro-preview`: RStudio Pro Preview (installer-less) - Synced from https://rstudio.com/products/rstudio/download/preview/
+
+#### Released versions
+
+* `rstudio-release`: RStudio released version (installer-less) - Synced from https://rstudio.com/products/rstudio/download/
+* `rstudio-pro-release`: RStudio Pro release version (installer-less) - Synced from https://rstudio.com/products/rstudio/download/
+
+#### Branched versions
+
+Only available in this bucket on the Open Source version. 
+Synced from https://dailies.rstudio.com/rstudio/
+
 * `rstudio-1.2`: RStudio 1.2 (installer-less) - Freezed to last available 1.2 version
 * `rstudio-1.3`: RStudio 1.3 (installer-less) - Freezed to last available 1.3 version
-* `rstudio-daily`: RStudio daily (installer-less) - Synced from https://dailies.rstudio.com/
-* `rstudio-preview`: RStudio Preview (installer-less) - Synced from https://rstudio.com/products/rstudio/download/preview/
+* `rstudio-1.4`: RStudio 1.3 (installer-less) - Freezed to last available 1.4 version (Ghost Orchid)
+* `rstudio-2022.02`: RStudio 2022.02 (installer-less) - Last available version for Prairie Trillium branch
+* `rstudio-2022.06`: RStudio 2022.06 (installer-less) - Last available version for Spotted Wakerobin branch
 
 ### TinyTeX - Tex Live distribution
 > Experimental - this could still change
