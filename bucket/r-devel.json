@@ -4,11 +4,10 @@
     "version": "r81578",
     "license": "GPL-2.0-only",
     "url": "https://cloud.r-project.org/bin/windows/base/R-devel-win.exe",
-    "hash": "210e945ad86f093e27d327d6e50babbd8694cc46f9c161910836f6917bd1bc78",
+    "hash": "md5:bd5585de1d0755e73a78cb7a1f8aa795",
     "innosetup": true,
     "architecture": {
         "64bit": {
-            "pre_install": "Rename-Item \"$dir\\bin\\R,2.exe\" 'R.exe'",
             "bin": [
                 "bin\\x64\\R.exe",
                 "bin\\x64\\Rcmd.exe",
@@ -22,29 +21,7 @@
                     "R-devel"
                 ]
             ]
-        },
-        "32bit": {
-            "pre_install": "Rename-Item \"$dir\\bin\\R,1.exe\" 'R.exe'",
-            "bin": [
-                "bin\\i386\\R.exe",
-                "bin\\i386\\Rcmd.exe",
-                "bin\\i386\\Rgui.exe",
-                "bin\\i386\\Rscript.exe",
-                "bin\\i386\\Rterm.exe"
-            ],
-            "shortcuts": [
-                [
-                    "bin\\i386\\Rgui.exe",
-                    "R-devel"
-                ]
-            ]
         }
-    },
-    "installer": {
-        "script": [
-            "Remove-Item \"$dir\\bin\\R,*.exe\" -Force",
-            "Copy-Item \"$dir\\bin\\R.exe\" \"$dir\\bin\\Rscript.exe\""
-        ]
     },
     "notes": [
         "For source packages installation, you will need to install Rtools if not already present, and add to PATH in your .Renviron: https://cran.r-project.org/bin/windows/Rtools",
@@ -63,6 +40,9 @@
         "regex": "(r\\d+)"
     },
     "autoupdate": {
-        "url": "https://cloud.r-project.org/bin/windows/base/R-devel-win.exe"
+        "url": "https://cloud.r-project.org/bin/windows/base/R-devel-win.exe",
+        "hash": {
+            "url": "$baseurl/md5sum.txt.R-devel"
+        }
     }
 }
