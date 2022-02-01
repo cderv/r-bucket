@@ -1,12 +1,12 @@
 {
-    "version": "2022.02.0-preview+412.pro2",
+    "version": "2022.02.0+414.pro1",
     "homepage": "https://www.rstudio.com/",
     "description": "An IDE for R, which includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.",
     "license": "https://rstudio.com/about/eula/",
     "architecture": {
         "64bit": {
-            "url": "https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-pro-2022.02.0-preview-412.pro2.zip",
-            "hash": "9fd0edb529e98304c036fb4a72f3c1befbf737f625fda15cb6369d71014f4877"
+            "url": "https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-pro-2022.02.0-414.pro1.zip",
+            "hash": "32e1c61fa8940892c5d2044bdd71f945adb27c37be124bcf7f0ddbb7de9a1273"
         }
     },
     "bin": [
@@ -24,7 +24,7 @@
     "checkver": {
         "url": "https://dailies.rstudio.com/rstudio/latest/index.json",
         "jsonpath": ".products['desktop-pro'].platforms['windows-xcopy'].version",
-        "regex": "(?<date>[\\d.]+)(?<type>-(daily|preview))\\+(?<build>\\d+)(?<pro>\\.pro\\d+)",
+        "regex": "(?<date>[\\d.]+)(?<type>-(daily|preview))?\\+(?<build>\\d+)(?<pro>\\.pro\\d+)",
         "replace": "${date}${type}+${build}${pro}"
     },
     "autoupdate": {

@@ -1,12 +1,12 @@
 {
-    "version": "2022.02.0-preview+412",
+    "version": "2022.02.0+414",
     "homepage": "https://www.rstudio.com/",
     "description": "An IDE for R, which includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.",
     "license": "AGPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-2022.02.0-preview-412.zip",
-            "hash": "bfbbbce7b1c63dfc5dbef9bd897b986cf8512c1a2c20a1d8eec5209be8a39074"
+            "url": "https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-2022.02.0-414.zip",
+            "hash": "3c9bac157d15647dc4b28aee01ae2e7353a62e0a528d64cb9c162f417fe7bf8b"
         }
     },
     "bin": [
@@ -24,7 +24,7 @@
     "checkver": {
         "url": "https://dailies.rstudio.com/rstudio/prairie-trillium/index.json",
         "jsonpath": ".desktop.platforms['windows-xcopy'].version",
-        "regex": "(?<date>[\\d.]+)(?<type>-(daily|preview))\\+(?<build>\\d+)",
+        "regex": "(?<date>[\\d.]+)(?<type>-(daily|preview))?\\+(?<build>\\d+)",
         "replace": "${date}${type}+${build}"
     },
     "autoupdate": {
