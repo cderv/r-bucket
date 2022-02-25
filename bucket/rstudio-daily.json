@@ -1,12 +1,12 @@
 {
-    "version": "2022.06.0-daily+148",
+    "version": "2022.06.0-daily+150",
     "homepage": "https://www.rstudio.com/",
     "description": "An IDE for R, which includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.",
     "license": "AGPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-2022.06.0-daily-148.zip",
-            "hash": "e362512b7f065e2f22b2ea00ea859703f79161db581a4a0deefed75d0dad2695"
+            "url": "https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-2022.06.0-daily-150.zip",
+            "hash": "f8172fe4c4026279b486e570139ea8cd4785f968500975faf9d3c7dbbdfbc31a"
         }
     },
     "bin": [
