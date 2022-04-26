@@ -1,0 +1,14 @@
+{
+    "version": "0.2.3",
+    "description": "The R installation manage: Install, remove, configure R versions.",
+    "homepage": "https://github.com/r-lib/rim",
+    "license": "MIT",
+    "url": "https://github.com/r-lib/rim/releases/download/v0.2.3/rim-windows-0.2.3.exe",
+    "innosetup": true,
+    "bin": "rim.exe",
+    "hash": "ae03f18e825af8ced9a4d3058f09d9ad6f7e4824901b9e6808d9874a334bdd74",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/r-lib/rim/releases/download/v$version/rim-windows-$version.exe"
+    }
+}

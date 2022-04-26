@@ -3,25 +3,25 @@
 
 This repos contains some manifests I use to quickly install and update some applications useful for an R user that I don't find in any other bucket.
 
-- [Scoop bucket for an R user](#scoop-bucket-for-an-r-user)
-  - [Apps in this bucket](#apps-in-this-bucket)
-    - [RStudio IDE](#rstudio-ide)
-      - [Daily versions](#daily-versions)
-      - [Preview versions](#preview-versions)
-      - [Released versions](#released-versions)
-      - [Branched versions](#branched-versions)
-    - [TinyTeX - Tex Live distribution](#tinytex---tex-live-distribution)
-    - [R versions](#r-versions)
-      - [R release and old releases](#r-release-and-old-releases)
-      - [R devel](#r-devel)
-    - [Quarto CLI](#quarto-cli)
-  - [To install scoop](#to-install-scoop)
-  - [Add this scoop bucket](#add-this-scoop-bucket)
-  - [Install an app](#install-an-app)
-  - [List installed apps](#list-installed-apps)
-  - [Update an app](#update-an-app)
-  - [Uninstall an app](#uninstall-an-app)
-  - [check if a tools is found in PATH](#check-if-a-tools-is-found-in-path)
+- [Apps in this bucket](#apps-in-this-bucket)
+  - [RStudio IDE](#rstudio-ide)
+    - [Daily versions](#daily-versions)
+    - [Preview versions](#preview-versions)
+    - [Released versions](#released-versions)
+    - [Branched versions](#branched-versions)
+  - [TinyTeX - Tex Live distribution](#tinytex---tex-live-distribution)
+  - [R versions](#r-versions)
+    - [R release and old releases](#r-release-and-old-releases)
+    - [R devel](#r-devel)
+  - [Quarto CLI](#quarto-cli)
+  - [RIM: R Installation Manager](#rim-r-installation-manager)
+- [To install scoop](#to-install-scoop)
+- [Add this scoop bucket](#add-this-scoop-bucket)
+- [Install an app](#install-an-app)
+- [List installed apps](#list-installed-apps)
+- [Update an app](#update-an-app)
+- [Uninstall an app](#uninstall-an-app)
+- [check if a tools is found in PATH](#check-if-a-tools-is-found-in-path)
 
 ## Apps in this bucket
 ### RStudio IDE 
@@ -122,6 +122,20 @@ scoop install quarto
 
 # update
 scoop update quarto
+```
+
+### RIM: R Installation Manager
+
+RIM, the R Installation Manager, (https://github.com/r-lib/rim) is a tool to install, remove, configure R versions.
+
+This bucket contains the manifest to install and update easily the [rim CLI](https://github.com/r-lib/rim/releases) for Windows. 
+
+```powershell
+# install
+scoop install rim
+
+# update
+scoop update rim
 ```
 
 ## To install scoop 
