@@ -1,12 +1,12 @@
 {
-    "version": "2022.06.0-daily+343.pro1",
+    "version": "2022.06.0-daily+343.pro2",
     "homepage": "https://www.rstudio.com/",
     "description": "An IDE for R, which includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.",
     "license": "https://rstudio.com/about/eula/",
     "architecture": {
         "64bit": {
-            "url": "https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-pro-2022.06.0-daily-343.pro1.zip",
-            "hash": "1c616ae0878a6290dd08654901d60c666040d34c393c89e16384314084b7c5df"
+            "url": "https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-pro-2022.06.0-daily-343.pro2.zip",
+            "hash": "d3a1df9edaa341c787f02db0bb81c867c2de6e0264faada8f216859eb5e4ae90"
         }
     },
     "bin": [
