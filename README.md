@@ -10,11 +10,11 @@ This repos contains some manifests I use to quickly install and update some appl
     - [Released versions](#released-versions)
     - [Branched versions](#branched-versions)
   - [TinyTeX - Tex Live distribution](#tinytex---tex-live-distribution)
-  - [R versions](#r-versions)
-    - [R release and old releases](#r-release-and-old-releases)
+  - [R](#r)
     - [R devel](#r-devel)
+    - [R Installation Manager (RIM)](#r-installation-manager-rim)
+    - [R release and old releases](#r-release-and-old-releases)
   - [Quarto CLI](#quarto-cli)
-  - [RIM: R Installation Manager](#rim-r-installation-manager)
 - [To install scoop](#to-install-scoop)
 - [Add this scoop bucket](#add-this-scoop-bucket)
 - [Install an app](#install-an-app)
@@ -65,28 +65,7 @@ See full documentation at https://yihui.org/tinytex/ and about the releases at h
 
 The binaries are synced from https://github.com/yihui/tinytex-releases/releases
 
-### R versions
-
-#### R release and old releases
-
-You can install R current release using 
-
-```powershell
-scoop install r-release
-```
-
-but you can also install previous release using 
-
-```powershell
-scoop install r-release@3.5.2
-```
-
-You can then switch between R versions (including r-devel - see below) using 
-
-```powershell
-scoop reset r-release
-scoop reset r-release@3.5.2
-```
+### R 
 
 #### R devel
 
@@ -108,6 +87,47 @@ scoop reset r-devel
 rterm --version # r-devel
 ```
 
+#### R Installation Manager (RIM)
+
+RIM, the R Installation Manager, (https://github.com/r-lib/rim) is a tool to install, remove, configure R versions. 
+
+This bucket contains the manifest to install and update easily the [rim CLI](https://github.com/r-lib/rim/releases) for Windows. 
+
+```powershell
+# install
+scoop install rim
+
+# update
+scoop update rim
+```
+
+Using RIM, you can then install and manage any R versions. 
+
+#### R release and old releases
+
+If you prefer installing R versions with scoop, you can can 
+
+- install R current release.
+
+```powershell
+scoop install r-release
+```
+
+- or install a previous release
+
+```powershell
+scoop install r-release@3.5.2
+```
+
+You can then switch between R versions (including r-devel - see below) using 
+
+```powershell
+scoop reset r-release
+scoop reset r-release@3.5.2
+```
+
+[R Installation Manager (RIM)](#r-installation-manager-rim), installable from this bucket too, is a better tool for installing R versions.
+
 ### Quarto CLI
 
 Quarto (https://quarto.org/) is an open-source scientific and technical publishing system built on Pandoc. Quarto documents are authored using markdown, an easy to write plain text format.
@@ -122,20 +142,6 @@ scoop install quarto
 
 # update
 scoop update quarto
-```
-
-### RIM: R Installation Manager
-
-RIM, the R Installation Manager, (https://github.com/r-lib/rim) is a tool to install, remove, configure R versions.
-
-This bucket contains the manifest to install and update easily the [rim CLI](https://github.com/r-lib/rim/releases) for Windows. 
-
-```powershell
-# install
-scoop install rim
-
-# update
-scoop update rim
 ```
 
 ## To install scoop 
