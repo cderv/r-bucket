@@ -24,6 +24,9 @@ This repos contains some manifests I use to quickly install and update some appl
 - [check if a tools is found in PATH](#check-if-a-tools-is-found-in-path)
 
 ## Apps in this bucket
+
+Below is a list of the app available through this bucket. This can also be found in [scoop.sh Apps listing](https://scoop.sh/#/apps?q=%22https%3A%2F%2Fgithub.com%2Fcderv%2Fr-bucket%22). 
+
 ### RStudio IDE 
 
 #### Daily versions
