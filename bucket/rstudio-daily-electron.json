@@ -11,13 +11,13 @@
     },
     "bin": [
         [
-            "bin\\rstudio.exe",
+            "rstudio.exe",
             "rstudio-daily-electrion"
         ]
     ],
     "shortcuts": [
         [
-            "bin\\rstudio.exe",
+            "rstudio.exe",
             "RStudio Daily Electron"
         ]
     ],
