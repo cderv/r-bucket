@@ -12,7 +12,7 @@ This repos contains some manifests I use to quickly install and update some appl
   - [TinyTeX - Tex Live distribution](#tinytex---tex-live-distribution)
   - [R](#r)
     - [R devel](#r-devel)
-    - [R Installation Manager (RIM)](#r-installation-manager-rim)
+    - [rig - R Installation Manager](#rig---r-installation-manager)
     - [R release and old releases](#r-release-and-old-releases)
   - [Quarto CLI](#quarto-cli)
 - [To install scoop](#to-install-scoop)
@@ -90,21 +90,21 @@ scoop reset r-devel
 rterm --version # r-devel
 ```
 
-#### R Installation Manager (RIM)
+#### rig - R Installation Manager
 
-RIM, the R Installation Manager, (https://github.com/r-lib/rim) is a tool to install, remove, configure R versions. 
+rig, the R Installation Manager, (https://github.com/r-lib/rig) is a tool to install, remove, configure R versions. 
 
-This bucket contains the manifest to install and update easily the [rim CLI](https://github.com/r-lib/rim/releases) for Windows. 
+This bucket contains the manifest to install and update easily the [rig CLI](https://github.com/r-lib/rig/releases) for Windows. 
 
 ```powershell
 # install
-scoop install rim
+scoop install rig
 
 # update
-scoop update rim
+scoop update rig
 ```
 
-Using RIM, you can then install and manage any R versions. 
+Using `rig`, you can then install and manage any R versions. See `rig help` for details.
 
 #### R release and old releases
 
