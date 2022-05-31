@@ -12,7 +12,7 @@
     "bin": [
         [
             "rstudio.exe",
-            "rstudio-daily-electrion"
+            "rstudio-daily-electron"
         ]
     ],
     "shortcuts": [
