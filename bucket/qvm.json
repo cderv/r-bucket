@@ -1,0 +1,19 @@
+{
+    "version": "0.0.2",
+    "description": "Quarto Version Manager - manage and switch between versions of Quarto.",
+    "homepage": "https://github.com/dpastoor/qvm",
+    "license": "MIT",
+    "url": "https://github.com/dpastoor/qvm/releases/download/v0.0.2/qvm_Windows_x86_64.zip",
+    "bin": "qvm.exe",
+    "hash": "85596a44c88b4bb508bded0e47146fa0e8356d4277b549ada0fd929c1d9d1fb3",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/dpastoor/qvm/releases/download/v$version/qvm_Windows_x86_64.zip"
+    },
+    "notes": [
+        "After installation, run `qvm init` and follow the instruction.",
+        "You probably need to add the qvm bin directory (`qvm path active`) to your PATH, so that quarto CLI from qvm is found.",
+        "",
+        "Autocompletion for `qvm` on Windows is not yet available",
+    ]
+}

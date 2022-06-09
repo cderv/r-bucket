@@ -15,6 +15,8 @@ This repos contains some manifests I use to quickly install and update some appl
     - [rig - R Installation Manager](#rig---r-installation-manager)
     - [R release and old releases](#r-release-and-old-releases)
   - [Quarto CLI](#quarto-cli)
+  - [Quarto Versions Manager - QVM](#quarto-versions-manager---qvm)
+    - [Should I install `quarto` using `qvm` or install `quarto` with scoop directly ?](#should-i-install-quarto-using-qvm-or-install-quarto-with-scoop-directly-)
 - [To install scoop](#to-install-scoop)
 - [Add this scoop bucket](#add-this-scoop-bucket)
 - [Install an app](#install-an-app)
@@ -146,6 +148,27 @@ scoop install quarto
 # update
 scoop update quarto
 ```
+
+You can also install and manage Quarto using [Quarto Versions Manager - qvm](#quarto-versions-manager---qvm)
+
+### Quarto Versions Manager - QVM
+
+[Quarto Version Manager](https://github.com/dpastoor/qvm) is a CLI tools that allows to manage and switch between versions of Quarto easily. 
+
+This bucket contains the manifest to install and update easily the [qvm releases](https://github.com/dpastoor/qvm/releases) for Windows.
+
+#### Should I install `quarto` using `qvm` or install `quarto` with scoop directly ?
+
+QVM is aimed toward developers using Quarto that quickly needs to switch between versions. For only installing quarto and staying up to date, install [quarto](#quarto-cli) directly from this bucket will be enough. **It is not recommended to have both installed**.
+
+```powershell
+# install
+scoop install qvm
+
+# update
+scoop update qvm
+```
+
 
 ## To install scoop 
 
