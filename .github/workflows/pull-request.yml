@@ -4,12 +4,11 @@ on:
 name: Pull requests
 jobs:
   pullRequestHandler:
-    name: PullRequestHandler
-    runs-on: ubuntu-latest
+    name: Pull Request Validator
+    runs-on: windows-latest
     steps:
-    - uses: actions/checkout@master
-    - name: PullRequestHandler
-      uses: Ash258/Scoop-GithubActions@stable
+    - uses: actions/checkout@main
+    - name: Pull Request Validator
+      uses: ScoopInstaller/Scoop-GithubActions@main
       env:
-        GITH_EMAIL: christophe.dervieux@gmail.com # Not needed, but recommended
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

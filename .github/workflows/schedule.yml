@@ -8,12 +8,12 @@ name: Excavator
 jobs:
   excavate:
     name: Excavate
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
-    - uses: actions/checkout@master
-    - name: Excavate
-      uses: Ash258/Scoop-GithubActions@stable
+    - uses: actions/checkout@main
+    - name: Excavator
+      uses: ScoopInstaller/Scoop-GithubActions@main
       env:
-        GITH_EMAIL: christophe.dervieux@gmail.com
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SKIP_UPDATED: '1'
+        THROW_ERROR: '0'
