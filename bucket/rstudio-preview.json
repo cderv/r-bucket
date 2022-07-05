@@ -1,5 +1,5 @@
 {
-    "version": "2022.07.0-preview+545",
+    "version": "2022.07.0+545-preview",
     "homepage": "https://www.rstudio.com/",
     "description": "An IDE for R, which includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.",
     "license": "AGPL-3.0-only",
@@ -24,7 +24,7 @@
     "checkver": {
         "url": "https://www.rstudio.com/products/rstudio/download/preview/",
         "regex": "RStudio (?<date>[\\d.]+)(?<type>-(daily|preview))?(?:&#43;)(?<build>\\d+) - Windows",
-        "replace": "${date}${type}+${build}"
+        "replace": "${date}+${build}${type}"
     },
     "autoupdate": {
         "architecture": {
