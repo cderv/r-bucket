@@ -15,6 +15,9 @@ This repos contains some manifests I use to quickly install and update some appl
     - [rig - R Installation Manager](#rig---r-installation-manager)
     - [R release and old releases](#r-release-and-old-releases)
   - [Quarto CLI](#quarto-cli)
+    - [Stable version](#stable-version)
+    - [Pre-release version](#pre-release-version)
+    - [Switching between stable and pre-release](#switching-between-stable-and-pre-release)
   - [Quarto Versions Manager - QVM](#quarto-versions-manager---qvm)
     - [Should I install `quarto` using `qvm` or install `quarto` with scoop directly ?](#should-i-install-quarto-using-qvm-or-install-quarto-with-scoop-directly-)
 - [To install scoop](#to-install-scoop)
@@ -137,9 +140,9 @@ scoop reset r-release@3.5.2
 
 Quarto (https://quarto.org/) is an open-source scientific and technical publishing system built on Pandoc. Quarto documents are authored using markdown, an easy to write plain text format.
 
-This bucket contains the manifest to install and update easily the [quarto CLI](https://github.com/quarto-dev/quarto-cli/releases) for Windows. 
+This bucket contains the manifests to install and update easily the [quarto CLI](https://github.com/quarto-dev/quarto-cli/releases) for Windows for stable versions and pre-release versions.
 
-**Quarto is still in heavy development and the last available daily build will be installed**
+#### Stable version
 
 ```powershell
 # install
@@ -150,6 +153,35 @@ scoop update quarto
 ```
 
 You can also install and manage Quarto using [Quarto Versions Manager - qvm](#quarto-versions-manager---qvm)
+
+#### Pre-release version
+
+```powershell
+scoop install quarto-prerelease
+
+scoop update quarto-prerelease
+```
+
+#### Switching between stable and pre-release
+
+`quarto` and `quarto-prerelease` will both make `quarto` binary available in PATH. Only one version can be used at the same time. To switch between version use the following: 
+
+```powershell
+scoop install quarto
+quarto --version # e.g 1.0.35
+
+# installing second
+scoop install quarto-prerelease
+quarto --version # e.g 1.1.3
+
+# Switching back to stable
+scoop reset quarto
+quarto --version # e.g 1.0.35
+
+# Switching again to pre-release
+scoop reset quarto-prerelease
+quarto --version # e.g 1.1.3
+```
 
 ### Quarto Versions Manager - QVM
 
