@@ -5,7 +5,7 @@
     "license": "GPL-2.0",
     "url": "https://github.com/quarto-dev/quarto-cli/releases/download/v1.1.175/quarto-1.1.175-win.zip",
     "hash": "a78808bdfb699d1f2c06e6b6240c4acb01d4672c9b3463a9bc81e6ecc46a8031",
-    "bin": "bin\\quarto.cmd",
+    "bin": "bin\\quarto.exe",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/quarto-dev/quarto-cli/releases/download/v$version/quarto-$version-win.zip"
