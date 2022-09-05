@@ -5,7 +5,7 @@
     "license": "GPL-2.0",
     "url": "https://github.com/quarto-dev/quarto-cli/releases/download/v1.2.59/quarto-1.2.59-win.zip",
     "hash": "4c7454e733497de278585784f3a48336f0fb8bbc1eeb80f15f6ad02d8ee2c1b8",
-    "bin": "bin\\quarto.cmd",
+    "bin": "bin\\quarto.exe",
     "checkver": {
         "url": "https://quarto.org/docs/download/_prerelease.json",
         "jp": "$.version"
