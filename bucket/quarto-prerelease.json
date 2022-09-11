@@ -1,10 +1,10 @@
 {
-    "version": "1.2.89",
+    "version": "1.2.90",
     "description": "Open-source scientific and technical publishing system built on Pandoc",
     "homepage": "https://github.com/quarto-dev/quarto-cli",
     "license": "GPL-2.0",
-    "url": "https://github.com/quarto-dev/quarto-cli/releases/download/v1.2.89/quarto-1.2.89-win.zip",
-    "hash": "fb8cca5d27f15b1b05657a94067dc0bb16daec6c860d679f193f1631f62fd78c",
+    "url": "https://github.com/quarto-dev/quarto-cli/releases/download/v1.2.90/quarto-1.2.90-win.zip",
+    "hash": "fce7a0103f3d91b599d49e86e2bac4ddf9780b618fb87649a0747fe1ef06010d",
     "bin": "bin\\quarto.exe",
     "checkver": {
         "url": "https://quarto.org/docs/download/_prerelease.json",
