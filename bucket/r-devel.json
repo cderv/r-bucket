@@ -4,7 +4,7 @@
     "version": "r84185",
     "license": "GPL-2.0-only",
     "url": "https://cloud.r-project.org/bin/windows/base/R-devel-win.exe",
-    "hash": "md5:d289b45782b6eaa1429dbb7eec6873b0",
+    "hash": "md5:2a3d035169abef57d7d889e04b86fb3a",
     "innosetup": true,
     "architecture": {
         "64bit": {
