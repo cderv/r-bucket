@@ -30,7 +30,7 @@ This repos contains some manifests I use to quickly install and update some appl
 
 ## Apps in this bucket
 
-Below is a list of the app available through this bucket. This can also be found in [scoop.sh Apps listing](https://scoop.sh/#/apps?q=%22https%3A%2F%2Fgithub.com%2Fcderv%2Fr-bucket%22). 
+Below is a list of the app available through this bucket. This can also be found in [scoop.sh Apps listing](https://scoop.sh/#/apps?q=https%3A%2F%2Fgithub.com%2Fcderv%2Fr-bucket). 
 
 ### RStudio IDE 
 
