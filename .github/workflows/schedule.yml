@@ -10,10 +10,32 @@ jobs:
     name: Excavate
     runs-on: windows-latest
     steps:
-    - uses: actions/checkout@main
+    - uses: actions/checkout@v3
     - name: Excavator
       uses: ScoopInstaller/Scoop-GithubActions@main
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SKIP_UPDATED: '1'
         THROW_ERROR: '0'
+  # We have some faulty hash so recompute them each time
+  recompute-hash:
+    needs: excavate
+    name: Recompute Hash
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install Scoop
+      run: |
+        Invoke-WebRequest -useb get.scoop.sh -outfile 'install.ps1'
+        .\install.ps1 -RunAsAdmin
+        Join-Path (Resolve-Path ~).Path "scoop\shims" >> $Env:GITHUB_PATH
+    - name: recompute Hash
+      run: |
+        .\bin\checkver.ps1  -ForceUpdate
+    # Commit all changed files back to the repository
+    - uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
+      with:
+        add: 'bucket'
+        commit: --signoff
+        default_author: github_actions
+        message: 'Updating hashes (Automated by Github Actions)'
