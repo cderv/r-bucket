@@ -1,29 +1,29 @@
 {
-    "version": "2022.07.3+586",
+    "version": "2023.06.3+575",
     "homepage": "https://www.rstudio.com/",
     "description": "An IDE for R, which includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.",
     "license": "AGPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-2022.07.3-586.zip",
-            "hash": "fd1306c7a52c25b4fd5ecdf8ddddfca0e3d7e52a2d04fe2bf72bbdcd4cdc4b37"
+            "url": "https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-2023.06.3-575.zip",
+            "hash": "208cfbc1d4f2040868701a18a48c811e5a540154fb61c7302de7de069b1d867e"
         }
     },
     "bin": [
         [
             "bin\\rstudio.exe",
-            "rstudio-2022.07"
+            "rstudio-2023.06"
         ]
     ],
     "shortcuts": [
         [
             "bin\\rstudio.exe",
-            "RStudio 2022.07"
+            "RStudio 2023.06"
         ]
     ],
     "checkver": {
-        "url": "https://dailies.rstudio.com/rstudio/spotted-wakerobin/index.json",
-        "jsonpath": ".desktop.platforms['windows-xcopy'].version",
+        "url": "https://dailies.rstudio.com/rstudio/mountain-hydrangea/index.json",
+        "jsonpath": ".electron.platforms['windows-xcopy'].version",
         "regex": "(?<date>[\\d.]+)(?<type>-(daily|preview))?\\+(?<build>\\d+)",
         "replace": "${date}+${build}${type}"
     },
@@ -33,8 +33,8 @@
                 "url": "https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-$matchDate$matchType-$matchBuild.zip",
                 "hash": {
                     "mode": "json",
-                    "jsonpath": ".desktop.platforms['windows-xcopy'].sha256",
-                    "url": "https://dailies.rstudio.com/rstudio/spotted-wakerobin/index.json"
+                    "jsonpath": ".electron.platforms['windows-xcopy'].sha256",
+                    "url": "https://dailies.rstudio.com/rstudio/mountain-hydrangea/index.json"
                 }
             }
         }
