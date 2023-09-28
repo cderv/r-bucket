@@ -27,7 +27,7 @@
         "regex": "(?<date>[\\d.]+)\\+(?<build>\\d+)",
         "replace": "${date}+${build}"
     },
-    "autoupdate": {
+/*     "autoupdate": {
         "architecture": {
             "64bit": {
                 "url": "https://s3.amazonaws.com/rstudio-desktop/electron/windows/RStudio-$matchDate-$matchBuild.zip",
@@ -38,5 +38,5 @@
                 }
             }
         }
-    }
+    } */
 }
