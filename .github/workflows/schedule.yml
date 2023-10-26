@@ -38,5 +38,5 @@ jobs:
         add: 'bucket'
         commit: --signoff
         default_author: github_actions
-        pull: --rebase
+        pull: --no-rebase
         message: 'Updating hashes (Automated by Github Actions)'
