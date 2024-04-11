@@ -20,6 +20,7 @@ This repos contains some manifests I use to quickly install and update some appl
     - [Switching between stable and pre-release](#switching-between-stable-and-pre-release)
   - [Quarto Versions Manager - QVM](#quarto-versions-manager---qvm)
     - [Should I install `quarto` using `qvm` or install `quarto` with scoop directly ?](#should-i-install-quarto-using-qvm-or-install-quarto-with-scoop-directly-)
+  - [Sass migrator](#sass-migrator)
 - [To install scoop](#to-install-scoop)
 - [Add this scoop bucket](#add-this-scoop-bucket)
 - [Install an app](#install-an-app)
@@ -201,6 +202,21 @@ scoop install qvm
 scoop update qvm
 ```
 
+### Sass migrator
+
+[Sass Migrator](https://github.com/sass/migrator) is a CLI tool to help migrate old to new syntax.
+
+The Sass migrator automatically updates stylesheets that use deprecated behavior to the latest and greatest Sass features. 
+
+See documentation on main website: https://sass-lang.com/documentation/cli/migrator/
+
+```powershell
+# install
+scoop install sass-migrator
+
+# update
+scoop install sass-migrator
+```
 
 ## To install scoop 
 
