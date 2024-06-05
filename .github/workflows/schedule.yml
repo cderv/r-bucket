@@ -23,7 +23,7 @@ jobs:
     name: Recompute Hash
     runs-on: windows-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Install Scoop
       run: |
         Invoke-WebRequest -useb get.scoop.sh -outfile 'install.ps1'
