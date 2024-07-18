@@ -9,6 +9,7 @@ This repos contains some manifests I use to quickly install and update some appl
     - [Preview versions](#preview-versions)
     - [Released versions](#released-versions)
     - [Branched versions](#branched-versions)
+  - [Positron](#positron)
   - [TinyTeX - Tex Live distribution](#tinytex---tex-live-distribution)
   - [R](#r)
     - [R devel](#r-devel)
@@ -60,6 +61,23 @@ Synced from https://dailies.rstudio.com/rstudio/
 * `rstudio-1.4`: RStudio 1.3 (installer-less) - Freezed to last available 1.4 version (Ghost Orchid)
 * `rstudio-2022.02`: RStudio 2022.02 (installer-less) - Last available version for Prairie Trillium branch
 * `rstudio-2022.06`: RStudio 2022.06 (installer-less) - Last available version for Spotted Wakerobin branch
+
+### Positron 
+
+Positron (<https://github.com/posit-dev/positron>) is :
+
+- a next-generation data science IDE built by Posit PBC
+- An extensible, polyglot tool for writing code and exploring data
+- A familiar environment for reproducible authoring and publishing
+
+> [!IMPORTANT]
+> Positron is an early stage project under active development and may [not yet be a good fit for you](https://github.com/posit-dev/positron/wiki#is-positron-for-me) !
+
+Positron is only available as pre-release build and this buckets contains a manifest for 
+
+````powershell
+scoop install positron
+````
 
 ### TinyTeX - Tex Live distribution
 > Experimental - this could still change
