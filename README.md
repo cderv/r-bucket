@@ -60,7 +60,14 @@ Synced from https://dailies.rstudio.com/rstudio/
 * `rstudio-1.3`: RStudio 1.3 (installer-less) - Freezed to last available 1.3 version
 * `rstudio-1.4`: RStudio 1.3 (installer-less) - Freezed to last available 1.4 version (Ghost Orchid)
 * `rstudio-2022.02`: RStudio 2022.02 (installer-less) - Last available version for Prairie Trillium branch
-* `rstudio-2022.06`: RStudio 2022.06 (installer-less) - Last available version for Spotted Wakerobin branch
+* `rstudio-2022.07`: RStudio 2022.06 (installer-less) - Last available version for Spotted Wakerobin branch
+* `rstudio-2022.12`: RStudio 2022.12 (installer-less) - Last available version for Elsbeth Geranium branch
+* `rstudio-2023.03`: RStudio 2023.03 (installer-less) - Last available version for Cherry Blossom branch
+* `rstudio-2023.06`: RStudio 2023.06 (installer-less) - Last available version for Mountain Hydrangea branch
+* `rstudio-2023.09`: RStudio 2023.09 (installer-less) - Last available version for Desert Sunflower branch
+* `rstudio-2023.12`: RStudio 2023.12 (installer-less) - Last available version for Ocean Storm branch
+* `rstudio-2024.04`: RStudio 2024.04 (installer-less) - Last available version for Desert Chocolate Cosmos branch
+
 
 ### Positron 
 
