@@ -22,6 +22,7 @@ This repos contains some manifests I use to quickly install and update some appl
   - [Quarto Versions Manager - QVM](#quarto-versions-manager---qvm)
     - [Should I install `quarto` using `qvm` or install `quarto` with scoop directly ?](#should-i-install-quarto-using-qvm-or-install-quarto-with-scoop-directly-)
   - [Sass migrator](#sass-migrator)
+  - [Air](#air)
 - [To install scoop](#to-install-scoop)
 - [Add this scoop bucket](#add-this-scoop-bucket)
 - [Install an app](#install-an-app)
@@ -243,6 +244,22 @@ scoop install sass-migrator
 scoop install sass-migrator
 ```
 
+### Air
+
+[air](https://github.com/posit-dev/air) is an R formatter and language server, written in Rust.  
+** air is currently in alpha. Expect breaking changes both in the API and in formatting results. ** 
+
+As `air` is also a tool available in other scoop bucket, it needs to be namespaced to be installed
+
+```powershell
+# install 
+# using r-bucket as in `scoop bucket add r-bucket https://github.com/cderv/r-bucket.git` when installing bucket
+scoop install r-bucket/air
+
+# update
+scoop install air
+````
+
 ## To install scoop 
 
 See https://github.com/lukesampson/scoop
@@ -258,6 +275,13 @@ scoop bucket add r-bucket https://github.com/cderv/r-bucket.git
 ```powershell
 scoop install rstudio-daily
 scoop install TinyTeX
+```
+
+You can also namespace app in this bucket if there is a conflict
+
+```powershell	
+# using r-bucket as in `scoop bucket add r-bucket https://github.com/cderv/r-bucket.git` when installing bucket
+scoop install r-bucket/air
 ```
 
 ## List installed apps
