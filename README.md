@@ -22,7 +22,7 @@ This repos contains some manifests I use to quickly install and update some appl
   - [Quarto Versions Manager - QVM](#quarto-versions-manager---qvm)
     - [Should I install `quarto` using `qvm` or install `quarto` with scoop directly ?](#should-i-install-quarto-using-qvm-or-install-quarto-with-scoop-directly-)
   - [Sass migrator](#sass-migrator)
-  - [Air](#air)
+  - [air](#air)
 - [To install scoop](#to-install-scoop)
 - [Add this scoop bucket](#add-this-scoop-bucket)
 - [Install an app](#install-an-app)
@@ -244,10 +244,10 @@ scoop install sass-migrator
 scoop install sass-migrator
 ```
 
-### Air
+### air
 
 [air](https://github.com/posit-dev/air) is an R formatter and language server, written in Rust.  
-** air is currently in alpha. Expect breaking changes both in the API and in formatting results. ** 
+**air is currently in alpha. Expect breaking changes both in the API and in formatting results.** 
 
 As `air` is also a tool available in other scoop bucket, it needs to be namespaced to be installed
 
