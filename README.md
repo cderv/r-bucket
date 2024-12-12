@@ -84,7 +84,8 @@ Positron (<https://github.com/posit-dev/positron>) is :
 Positron is only available as pre-release build and this buckets contains a manifest for 
 
 ````powershell
-scoop install positron
+# using r-bucket as in `scoop bucket add r-bucket https://github.com/cderv/r-bucket.git` when installing bucket
+scoop install r-bucket/positron
 ````
 
 ### TinyTeX - Tex Live distribution
