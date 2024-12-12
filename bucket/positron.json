@@ -13,7 +13,7 @@
             "/TASKS=\"\""
         ]
     },
-    "bin": "Positron.exe",
+    "bin": "bin/positron.cmd",
     "uninstaller": {
         "file": "unins000.exe",
         "args": [
