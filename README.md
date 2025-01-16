@@ -23,6 +23,7 @@ This repos contains some manifests I use to quickly install and update some appl
     - [Should I install `quarto` using `qvm` or install `quarto` with scoop directly ?](#should-i-install-quarto-using-qvm-or-install-quarto-with-scoop-directly-)
   - [Sass migrator](#sass-migrator)
   - [air](#air)
+  - [Chrome Headless Shell](#chrome-headless-shell)
 - [To install scoop](#to-install-scoop)
 - [Add this scoop bucket](#add-this-scoop-bucket)
 - [Install an app](#install-an-app)
@@ -259,6 +260,19 @@ scoop install r-bucket/air
 
 # update
 scoop install air
+```
+
+### Chrome Headless Shell
+
+`chrome-headless-shell` is a new binary based on old chrome headless mode, dedicated to screenshoting, pdf printing or web-scraping. See more at <https://developer.chrome.com/blog/chrome-headless-shell>.
+
+```powershell
+# install 
+# using r-bucket as in `scoop bucket add r-bucket https://github.com/cderv/r-bucket.git` when installing bucket
+scoop install r-bucket/chrome-headless-shell
+
+# update
+scoop install chrome-headless-shell
 ````
 
 ## To install scoop 
