@@ -39,7 +39,7 @@
     "autoupdate": {
         "url": "https://cdn.posit.co/positron/dailies/win/x86_64/Positron-$version-UserSetup.exe",
         "hash": {
-            "url": "https://cdn.posit.co/positron/dailies/win/x86_64/user-releases.json",
+            "url": "$baseurl/user-releases.json",
             "jsonpath": "$.sha256hash"
         }
     },
