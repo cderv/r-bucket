@@ -10,6 +10,9 @@ This repos contains some manifests I use to quickly install and update some appl
     - [Released versions](#released-versions)
     - [Branched versions](#branched-versions)
   - [Positron](#positron)
+    - [Site-available versions](#site-available-versions)
+    - [Prereleases (Monthly build)](#prereleases-monthly-build)
+    - [Dailies (Nightly build)](#dailies-nightly-build)
   - [TinyTeX - Tex Live distribution](#tinytex---tex-live-distribution)
   - [R](#r)
     - [R devel](#r-devel)
@@ -82,12 +85,34 @@ Positron (<https://github.com/posit-dev/positron>) is :
 > [!IMPORTANT]
 > Positron is an early stage project under active development and may [not yet be a good fit for you](https://github.com/posit-dev/positron/wiki#is-positron-for-me) !
 
-Positron is only available as pre-release build and this buckets contains a manifest for 
+#### Site-available versions
+
+This is the version offered to be downloaded at <https://positron.posit.co/download.html>. It will be available in PATH as `positron`.
+
+```powershell
 
 ````powershell
 # using r-bucket as in `scoop bucket add r-bucket https://github.com/cderv/r-bucket.git` when installing bucket
 scoop install r-bucket/positron
 ````
+
+#### Prereleases (Monthly build)
+
+This version can't be used at the same time as the other positron pre-release install above as it will be available in PATH as `positron` also.
+It follows version published at `https://cdn.posit.co/positron/prereleases/` 
+
+```powershell
+scoop install positron-prerelease
+```
+
+#### Dailies (Nightly build)
+
+This version is the build pushed daily. It can be installed and use at the same time of other positron version, as it will be available in PATH as `positron-daily`.
+It follows version published at `https://cdn.posit.co/positron/dailies/`
+
+```powershell
+scoop install positron-daily
+```
 
 ### TinyTeX - Tex Live distribution
 > Experimental - this could still change
