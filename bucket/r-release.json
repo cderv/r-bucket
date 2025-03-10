@@ -76,6 +76,11 @@
         "}",
         "reg import \"$dir\\install-context.reg\""
     ],
+    "uninstaller": {
+        "script": [
+            "reg import \"$dir\\uninstall-context.reg\""
+        ]
+    },
     "notes": [
         "For source packages installation, you will need to install Rtools if not already present, and add to PATH in your .Renviron: https://cran.r-project.org/bin/windows/Rtools",
         "",
