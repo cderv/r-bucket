@@ -5,7 +5,7 @@
     "license": "BSD-3-Clause",
     "notes": [
         "For R 3.3.x to 3.6.x, please use 'versions/rtools35'.",
-        "for R-4.0.0 to to R-4.1.3, please use 'jade/rtools40'."
+        "for R-4.0.0 to to R-4.1.3, please use 'r-bucket/rtools40'."
     ],
     "architecture": {
         "64bit": {
