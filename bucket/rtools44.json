@@ -1,0 +1,72 @@
+{
+    "version": "6459-6401",
+    "description": "Tools for building packages for R under Microsoft Windows, or for building R itself.",
+    "homepage": "https://cran.r-project.org/bin/windows/Rtools/rtools44/rtools.html",
+    "license": "BSD-3-Clause",
+    "notes": [
+        "For R 3.3.x to 3.6.x, please use 'versions/rtools35';",
+        "for R-4.0.0 to to R-4.1.3, please use 'jade/rtools40';",
+        "for R 4.2.*, please use 'jade/rtools42';",
+        "for R 4.3.*, please use 'jade/rtools43'."
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://cloud.r-project.org/bin/windows/Rtools/rtools44/files/rtools44-6459-6401.exe",
+            "hash": "de9602992848faaeddca41f118dd6dc3de9bbfb00b8d87ebe5522af1dad1904b"
+        },
+        "arm64": {
+            "url": "https://cloud.r-project.org/bin/windows/Rtools/rtools44/files/rtools44-aarch64-6459-6401.exe",
+            "hash": "8d7104523f11a4e1a8c3ff4b78ace665cbcc54ed032a6c679574f55cd128f13f"
+        }
+    },
+    "innosetup": true,
+    "installer": {
+        "script": [
+            "function CreateFolder([String] $FolderName) {",
+            "   if (-not (Test-Path $dir\\$FolderName)) {",
+            "       Write-Host \"Creating Folder $FolderName\"",
+            "       New-Item $dir\\$FolderName -ItemType Directory",
+            "   }",
+            "}",
+            "CreateFolder 'tmp'",
+            "CreateFolder 'dev'"
+        ]
+    },
+    "env_set": {
+        "RTOOLS44_HOME": "$dir"
+    },
+    "shortcuts": [
+        [
+            "msys2.exe",
+            "Rtools44/Rtools44 Bash"
+        ],
+        [
+            "mingw64.exe",
+            "Rtools44/Rtools44 MinGW 64-bit"
+        ],
+        [
+            "ucrt64.exe",
+            "Rtools44/Rtools44 UCRT 64-bit"
+        ]
+    ],
+    "persist": [
+        "mingw32.ini",
+        "mingw64.ini",
+        "ucrt64.ini",
+        "msys2.ini"
+    ],
+    "checkver": {
+        "url": "https://cran.r-project.org/bin/windows/Rtools/rtools44/files/",
+        "regex": "rtools44-([\\d-]+)\\.exe"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://cloud.r-project.org/bin/windows/Rtools/rtools44/files/rtools44-$version.exe"
+            },
+            "arm64": {
+                "url": "https://cloud.r-project.org/bin/windows/Rtools/rtools44/files/rtools44-aarch64-$version.exe"
+            }
+        }
+    }
+}
