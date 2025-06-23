@@ -13,5 +13,9 @@
             "url": "https://api.github.com/repos/A2-ai/rv/releases/tags/v$version",
             "find": "$basename[\\S\\s]+$sha256[\\S\\s]+$basename"
         }
-    }
+    },
+    "notes": [
+        "'rv' is also an alias for Powershell 'Remote-Variable' function, so you may need to use 'rv.exe' instead of 'rv' in your scripts.",
+        "To use 'rv', you need to remove the Powershell alias. See 'scoop install pshazz' or remove the alias manually in your Powershell profile."
+    ]
 }
