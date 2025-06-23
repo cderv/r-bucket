@@ -18,6 +18,7 @@ This repos contains some manifests I use to quickly install and update some appl
     - [R devel](#r-devel)
     - [rig - R Installation Manager](#rig---r-installation-manager)
     - [R release and old releases](#r-release-and-old-releases)
+    - [rv - new R package installer](#rv---new-r-package-installer)
   - [Quarto CLI](#quarto-cli)
     - [Stable version](#stable-version)
     - [Pre-release version](#pre-release-version)
@@ -189,6 +190,18 @@ scoop reset r-release@3.5.2
 ```
 
 [R Installation Manager (RIM)](#r-installation-manager-rim), installable from this bucket too, is a better tool for installing R versions.
+
+#### rv - new R package installer
+
+rv is a new way to manage and install your R packages in a reproducible, fast, and declarative way. See <https://github.com/A2-ai/rv>
+
+```powershell
+# install
+scoop install rv
+
+# update
+scoop update rv
+```
 
 ### Quarto CLI
 
