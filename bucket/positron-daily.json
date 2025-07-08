@@ -4,7 +4,7 @@
     "homepage": "https://positron.posit.co",
     "license": "Elastic-2.0",
     "url": "https://cdn.posit.co/positron/dailies/win/x86_64/Positron-2025.08.0-23-UserSetup.exe",
-    "hash": "f5985006432b0462c74118c47cdf3b24be1ab61d1b937d7625d1f54561a6b922",
+    "hash": "0cbba6221cd45bc5cf89579fe7bd0c2e443373300bf21576ae2e1dffb9b91790",
     "installer": {
         "args": [
             "/VERYSILENT",
