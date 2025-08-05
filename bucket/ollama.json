@@ -6,7 +6,7 @@
     "url": "https://github.com/ollama/ollama/releases/download/v0.11.0/OllamaSetup.exe",
     "innosetup": true,
     "bin": "ollama.exe",
-    "hash": "0dbd7f7b0220dbaad075a84f6ac510c03c51b2e5716735183e50bfa684af4215",
+    "hash": "3fc698ee3e561338bd6e9398f91fb15fd4a00ccc3d6eacfcf2e4c61da1018f70",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/ollama/ollama/releases/download/v$version/OllamaSetup.exe"
