@@ -1,12 +1,12 @@
 {
-    "version": "2025.08.0+350.pro1",
+    "version": "2025.08.0+351.pro1",
     "homepage": "https://www.rstudio.com/",
     "description": "An IDE for R, which includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.",
     "license": "https://rstudio.com/about/eula/",
     "architecture": {
         "64bit": {
-            "url": "https://s3.amazonaws.com/rstudio-ide-build/electron/windows/RStudio-pro-2025.08.0-350.pro1.zip",
-            "hash": "9098860571c72fd9bbe498f7715b1ec77e32a91bff4c8a02e931001104dae33f"
+            "url": "https://s3.amazonaws.com/rstudio-ide-build/electron/windows/RStudio-pro-2025.08.0-351.pro1.zip",
+            "hash": "5700e9d2df3733ac3ae512d332de33a172a63aca705cc2d46474f60bd1eeaeda"
         }
     },
     "bin": [
