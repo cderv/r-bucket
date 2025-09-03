@@ -1,17 +1,17 @@
 {
-    "version": "140.0.7339.41",
+    "version": "140.0.7339.80",
     "homepage": "https://developer.chrome.com/blog/chrome-headless-shell",
     "description": "A lightweight wrapper around Chromium's //content module suitable for use cases such as automated screenshotting or web scraping.",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://storage.googleapis.com/chrome-for-testing-public/140.0.7339.41/win64/chrome-headless-shell-win64.zip",
-            "hash": "f5137df79f93c5c33bac423a9637d72a5674a08ffce1cbb6e130e5e7d00d5dcd",
+            "url": "https://storage.googleapis.com/chrome-for-testing-public/140.0.7339.80/win64/chrome-headless-shell-win64.zip",
+            "hash": "9ab484aaa260280bb6480a679469dd51a142f3df06fc044b0832b1330a45b583",
             "extract_dir": "chrome-headless-shell-win64"
         },
         "32bit": {
-            "url": "https://storage.googleapis.com/chrome-for-testing-public/140.0.7339.41/win32/chrome-headless-shell-win32.zip",
-            "hash": "00a2473f5d810f96b27ebb087333a60a3e9358296605ded69b296daebe75e18c",
+            "url": "https://storage.googleapis.com/chrome-for-testing-public/140.0.7339.80/win32/chrome-headless-shell-win32.zip",
+            "hash": "3c35230e524a8a47f206ba45ecf2f34de0d77b68583d98be255975a21c7809a5",
             "extract_dir": "chrome-headless-shell-win32"
         }
     },
