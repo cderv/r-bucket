@@ -27,6 +27,7 @@ This repos contains some manifests I use to quickly install and update some appl
     - [Should I install `quarto` using `qvm` or install `quarto` with scoop directly ?](#should-i-install-quarto-using-qvm-or-install-quarto-with-scoop-directly-)
   - [Sass migrator](#sass-migrator)
   - [air](#air)
+  - [Ark](#ark)
   - [Chrome Headless Shell](#chrome-headless-shell)
 - [To install scoop](#to-install-scoop)
 - [Add this scoop bucket](#add-this-scoop-bucket)
@@ -298,6 +299,20 @@ scoop install r-bucket/air
 
 # update
 scoop install air
+```
+
+
+### Ark
+
+[Ark](https://github.com/posit-dev/ark) is an R kernel for Jupyter applications. It provides an R-backed kernel to run R code inside Jupyter notebooks and other Jupyter frontends. See the upstream project for full details and usage instructions.
+
+```powershell
+# install 
+# using r-bucket as in `scoop bucket add r-bucket https://github.com/cderv/r-bucket.git` when installing bucket
+scoop install r-bucket/ark
+
+# update
+scoop update ark
 ```
 
 ### Chrome Headless Shell
