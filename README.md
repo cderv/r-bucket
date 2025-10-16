@@ -29,6 +29,7 @@ This repos contains some manifests I use to quickly install and update some appl
   - [air](#air)
   - [Ark](#ark)
   - [Chrome Headless Shell](#chrome-headless-shell)
+  - [GitHub MCP Server](#github-mcp-server)
 - [To install scoop](#to-install-scoop)
 - [Add this scoop bucket](#add-this-scoop-bucket)
 - [Install an app](#install-an-app)
@@ -320,13 +321,25 @@ scoop update ark
 `chrome-headless-shell` is a new binary based on old chrome headless mode, dedicated to screenshoting, pdf printing or web-scraping. See more at <https://developer.chrome.com/blog/chrome-headless-shell>.
 
 ```powershell
-# install 
+# install
 # using r-bucket as in `scoop bucket add r-bucket https://github.com/cderv/r-bucket.git` when installing bucket
 scoop install r-bucket/chrome-headless-shell
 
 # update
 scoop install chrome-headless-shell
-````
+```
+
+### GitHub MCP Server
+
+[GitHub MCP Server](https://github.com/github/github-mcp-server) is a Model Context Protocol (MCP) server for interacting with GitHub. It allows AI assistants and other tools to interact with GitHub repositories, issues, pull requests, and more through a standardized protocol.
+
+```powershell
+# install
+scoop install github-mcp-server
+
+# update
+scoop update github-mcp-server
+```
 
 ## To install scoop 
 
