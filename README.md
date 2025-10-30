@@ -30,6 +30,7 @@ This repos contains some manifests I use to quickly install and update some appl
   - [Ark](#ark)
   - [Chrome Headless Shell](#chrome-headless-shell)
   - [GitHub MCP Server](#github-mcp-server)
+  - [Beads](#beads)
 - [To install scoop](#to-install-scoop)
 - [Add this scoop bucket](#add-this-scoop-bucket)
 - [Install an app](#install-an-app)
@@ -340,6 +341,23 @@ scoop install github-mcp-server
 # update
 scoop update github-mcp-server
 ```
+
+### Beads
+
+> [!WARNING]
+> Beads is experimental software under active development. Currently supports solo workflows only.
+
+[Beads](https://github.com/steveyegge/beads) is a graph-based issue tracker designed for AI coding agents. It provides long-term memory and task planning by organizing work as interconnected issues tracked in git.
+
+```powershell
+# install
+scoop install beads
+
+# update
+scoop update beads
+```
+
+The binary is available as `bd`. See the [project README](https://github.com/steveyegge/beads#readme) for setup instructions (`bd init`), agent integration, and usage details.
 
 ## To install scoop 
 
