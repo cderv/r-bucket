@@ -31,6 +31,7 @@ This repos contains some manifests I use to quickly install and update some appl
   - [Chrome Headless Shell](#chrome-headless-shell)
   - [GitHub MCP Server](#github-mcp-server)
   - [Beads](#beads)
+  - [rsvg-convert](#rsvg-convert)
 - [To install scoop](#to-install-scoop)
 - [Add this scoop bucket](#add-this-scoop-bucket)
 - [Install an app](#install-an-app)
@@ -358,6 +359,18 @@ scoop update beads
 ```
 
 The binary is available as `bd`. See the [project README](https://github.com/steveyegge/beads#readme) for setup instructions (`bd init`), agent integration, and usage details.
+
+### rsvg-convert
+
+[rsvg-convert](https://github.com/miyako/console-rsvg-convert) is a command-line tool for rendering SVG files to various formats. This is a Windows-compatible build of the librsvg rsvg-convert utility.
+
+```powershell
+# install
+scoop install rsvg-convert
+
+# update
+scoop update rsvg-convert
+```
 
 ## To install scoop 
 
