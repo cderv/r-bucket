@@ -362,14 +362,24 @@ The binary is available as `bd`. See the [project README](https://github.com/ste
 
 ### rsvg-convert
 
-[rsvg-convert](https://github.com/miyako/console-rsvg-convert) is a command-line tool for rendering SVG files to various formats. This is a Windows-compatible build of the librsvg rsvg-convert utility.
+[rsvg-convert](https://wiki.gnome.org/Projects/LibRsvg) is a command-line tool for rendering SVG files to various formats (png, ps, pdf, xml, jpg, gif, tiff, wmf, emf, ico). This bucket provides the official GNOME librsvg build from SourceForge.
 
 ```powershell
-# install
+# install - official GNOME librsvg build (32-bit)
 scoop install rsvg-convert
 
 # update
 scoop update rsvg-convert
+```
+
+For users who need 64-bit builds or more recent versions, an alternative build is also available:
+
+```powershell
+# install - miyako build with 64-bit support
+scoop install rsvg-convert-miyako
+
+# update
+scoop update rsvg-convert-miyako
 ```
 
 ## To install scoop 
