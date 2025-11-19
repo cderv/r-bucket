@@ -12,7 +12,23 @@
             "hash": "06dca90d4e15bd5e1bf117223f45171d566d515779fe16e7d18b3a610d4d4d35"
         }
     },
-    "innosetup": true,
+    "installer": {
+        "args": [
+            "/S",
+            "/D=$dir"
+        ]
+    },
+    "bin": "Octarine.exe",
+    "shortcuts": [
+        [
+            "Octarine.exe",
+            "Octarine"
+        ]
+    ],
+    "uninstaller": {
+        "file": "uninstall.exe",
+        "args": "/S"
+    },
     "checkver": {
         "url": "https://octarine.app/releases",
         "regex": "href=\"/changelog/(?<version>[\\d.]+)\"[\\s\\S]*?\"windowsExe\":\"(?<url>https://[^\"]+)\""
