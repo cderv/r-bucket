@@ -27,6 +27,7 @@ This repos contains some manifests I use to quickly install and update some appl
     - [Should I install `quarto` using `qvm` or install `quarto` with scoop directly ?](#should-i-install-quarto-using-qvm-or-install-quarto-with-scoop-directly-)
   - [Sass migrator](#sass-migrator)
   - [air](#air)
+  - [jarl](#jarl)
   - [Ark](#ark)
   - [Chrome Headless Shell](#chrome-headless-shell)
   - [GitHub MCP Server](#github-mcp-server)
@@ -290,13 +291,13 @@ scoop install sass-migrator
 
 ### air
 
-[air](https://github.com/posit-dev/air) is an R formatter and language server, written in Rust.  
-**air is currently in alpha. Expect breaking changes both in the API and in formatting results.** 
+[air](https://github.com/posit-dev/air) is an R formatter and language server, written in Rust.
+**air is currently in alpha. Expect breaking changes both in the API and in formatting results.**
 
 As `air` is also a tool available in other scoop bucket, it needs to be namespaced to be installed
 
 ```powershell
-# install 
+# install
 # using r-bucket as in `scoop bucket add r-bucket https://github.com/cderv/r-bucket.git` when installing bucket
 scoop install r-bucket/air
 
@@ -304,6 +305,17 @@ scoop install r-bucket/air
 scoop install air
 ```
 
+### jarl
+
+[jarl](https://jarl.etiennebacher.com/) is a fast linter for R: it does static code analysis to search for programming errors, bugs, and suspicious patterns of code. Built on Air, it performs rapid code quality checks and provides automatic fixes when possible.
+
+```powershell
+# install
+scoop install jarl
+
+# update
+scoop update jarl
+```
 
 ### Ark
 
