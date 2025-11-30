@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/steveyegge/beads/releases/download/v0.26.2/beads_0.26.2_windows_amd64.zip",
-            "hash": "1b8c7f240ac9053184c25edfe68d259ff96d5e5ff26968bb7fd02e08fb840d24"
+            "hash": "26438b160cb65701781d1bfbdb28c0849980377a604abfccfc245404fa1bae71"
         }
     },
     "bin": "bd.exe",
