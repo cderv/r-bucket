@@ -1,10 +1,10 @@
 {
-    "version": "0.26.1",
+    "version": "0.26.2",
     "description": "GitHub MCP server - A Model Context Protocol (MCP) server for interacting with GitHub.",
     "homepage": "https://github.com/github/github-mcp-server",
     "license": "MIT",
-    "url": "https://github.com/github/github-mcp-server/releases/download/v0.26.1/github-mcp-server_Windows_x86_64.zip",
-    "hash": "d3f7dc7dfaf2d8ac5af8dddfd1c2105c0da0729a4fc5aad884a631b961dc0fb8",
+    "url": "https://github.com/github/github-mcp-server/releases/download/v0.26.2/github-mcp-server_Windows_x86_64.zip",
+    "hash": "efda76b42dc2b16d8008ad162fa0ab86684e4fdd146c76097ec997cb970f926c",
     "bin": "github-mcp-server.exe",
     "checkver": "github",
     "autoupdate": {
