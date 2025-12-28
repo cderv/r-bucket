@@ -1,12 +1,12 @@
 {
-    "version": "0.39.1",
+    "version": "0.40.0",
     "description": "Issue tracking that lives in your codebase",
     "homepage": "https://github.com/steveyegge/beads",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/steveyegge/beads/releases/download/v0.39.1/beads_0.39.1_windows_amd64.zip",
-            "hash": "cc7122c1fd916c261ee4dd60b12b49cad3f144e416a74b90959199e933ad5fe4"
+            "url": "https://github.com/steveyegge/beads/releases/download/v0.40.0/beads_0.40.0_windows_amd64.zip",
+            "hash": "820c6ec668fb2adc466af16dedb68d740571f872501ff0129d8d0f7adf84ee3a"
         }
     },
     "bin": "bd.exe",
