@@ -32,6 +32,7 @@ This repos contains some manifests I use to quickly install and update some appl
   - [Chrome Headless Shell](#chrome-headless-shell)
   - [GitHub MCP Server](#github-mcp-server)
   - [Beads](#beads)
+  - [beans](#beans)
   - [roborev](#roborev)
   - [rsvg-convert](#rsvg-convert)
 - [To install scoop](#to-install-scoop)
@@ -372,6 +373,18 @@ scoop update beads
 ```
 
 The binary is available as `bd`. See the [project README](https://github.com/steveyegge/beads#readme) for setup instructions (`bd init`), agent integration, and usage details.
+
+### beans
+
+[beans](https://github.com/hmans/beans) is a CLI-based, flat-file issue tracker that stores issues as Markdown files. It includes a TUI and GraphQL query support for AI agent integration.
+
+```powershell
+# install
+scoop install beans
+
+# update
+scoop update beans
+```
 
 ### roborev
 
