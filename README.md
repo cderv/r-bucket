@@ -32,6 +32,7 @@ This repos contains some manifests I use to quickly install and update some appl
   - [Chrome Headless Shell](#chrome-headless-shell)
   - [GitHub MCP Server](#github-mcp-server)
   - [Beads](#beads)
+  - [roborev](#roborev)
   - [rsvg-convert](#rsvg-convert)
 - [To install scoop](#to-install-scoop)
 - [Add this scoop bucket](#add-this-scoop-bucket)
@@ -371,6 +372,20 @@ scoop update beads
 ```
 
 The binary is available as `bd`. See the [project README](https://github.com/steveyegge/beads#readme) for setup instructions (`bd init`), agent integration, and usage details.
+
+### roborev
+
+[roborev](https://github.com/wesm/roborev) is a background agent that reviews your git commits autonomously while you work. It provides both CLI and TUI interfaces.
+
+```powershell
+# install
+scoop install roborev
+
+# update
+scoop update roborev
+```
+
+Two binaries are available: `roborev` (CLI) and `roborevd` (daemon for background reviews).
 
 ### rsvg-convert
 
