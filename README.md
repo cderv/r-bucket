@@ -30,10 +30,12 @@ This repos contains some manifests I use to quickly install and update some appl
   - [jarl](#jarl)
   - [Ark](#ark)
   - [Chrome Headless Shell](#chrome-headless-shell)
-  - [GitHub MCP Server](#github-mcp-server)
-  - [Beads](#beads)
-  - [beans](#beans)
-  - [roborev](#roborev)
+  - [AI & Developer Tools](#ai--developer-tools)
+    - [GitHub MCP Server](#github-mcp-server)
+    - [Beads](#beads)
+    - [beads-rust](#beads-rust)
+    - [beans](#beans)
+    - [roborev](#roborev)
   - [rsvg-convert](#rsvg-convert)
 - [To install scoop](#to-install-scoop)
 - [Add this scoop bucket](#add-this-scoop-bucket)
@@ -345,19 +347,20 @@ scoop install r-bucket/chrome-headless-shell
 scoop install chrome-headless-shell
 ```
 
-### GitHub MCP Server
+### AI & Developer Tools
+
+Tools for AI coding assistants, issue tracking, and automated code review.
+
+#### GitHub MCP Server
 
 [GitHub MCP Server](https://github.com/github/github-mcp-server) is a Model Context Protocol (MCP) server for interacting with GitHub. It allows AI assistants and other tools to interact with GitHub repositories, issues, pull requests, and more through a standardized protocol.
 
 ```powershell
-# install
 scoop install github-mcp-server
-
-# update
 scoop update github-mcp-server
 ```
 
-### Beads
+#### Beads
 
 > [!WARNING]
 > Beads is experimental software under active development. Currently supports solo workflows only.
@@ -365,36 +368,39 @@ scoop update github-mcp-server
 [Beads](https://github.com/steveyegge/beads) is a graph-based issue tracker designed for AI coding agents. It provides long-term memory and task planning by organizing work as interconnected issues tracked in git.
 
 ```powershell
-# install
 scoop install beads
-
-# update
 scoop update beads
 ```
 
 The binary is available as `bd`. See the [project README](https://github.com/steveyegge/beads#readme) for setup instructions (`bd init`), agent integration, and usage details.
 
-### beans
+#### beads-rust
+
+[beads-rust](https://github.com/Dicklesworthstone/beads_rust) is a fast Rust port of Beads, a local-first issue tracker for git repositories. It stores issues in SQLite with JSONL export for git-friendly collaboration.
+
+> [!NOTE]
+> This is a separate implementation from [Beads](#beads). Both provide similar functionality but beads-rust (binary: `br`) is written in Rust while Beads (binary: `bd`) is written in Go.
+
+```powershell
+scoop install beads-rust
+scoop update beads-rust
+```
+
+#### beans
 
 [beans](https://github.com/hmans/beans) is a CLI-based, flat-file issue tracker that stores issues as Markdown files. It includes a TUI and GraphQL query support for AI agent integration.
 
 ```powershell
-# install
 scoop install beans
-
-# update
 scoop update beans
 ```
 
-### roborev
+#### roborev
 
 [roborev](https://github.com/wesm/roborev) is a background agent that reviews your git commits autonomously while you work. It provides both CLI and TUI interfaces.
 
 ```powershell
-# install
 scoop install roborev
-
-# update
 scoop update roborev
 ```
 
