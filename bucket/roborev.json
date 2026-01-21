@@ -1,12 +1,12 @@
 {
-    "version": "0.13.1",
+    "version": "0.13.2",
     "description": "Background agent to review your git commits autonomously with CLI agents",
     "homepage": "https://github.com/wesm/roborev",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/wesm/roborev/releases/download/v0.13.1/roborev_0.13.1_windows_amd64.tar.gz",
-            "hash": "77fce6425448a1d97bcf9dad8cb95661a7caec6644346acba62a499463dc38c1"
+            "url": "https://github.com/wesm/roborev/releases/download/v0.13.2/roborev_0.13.2_windows_amd64.tar.gz",
+            "hash": "ec3008c481707624b524fef1c7942b7206312a1967a5a532b6bf25c09247184b"
         }
     },
     "bin": [
