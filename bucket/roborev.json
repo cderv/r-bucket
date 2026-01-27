@@ -9,10 +9,7 @@
             "hash": "596f93413b6f405ed508b5103316c026ab7a60814e3f14e254972446d99f2d7f"
         }
     },
-    "bin": [
-        "roborev.exe",
-        "roborevd.exe"
-    ],
+    "bin": "roborev.exe",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
