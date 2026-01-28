@@ -29,6 +29,7 @@ This repos contains some manifests I use to quickly install and update some appl
   - [air](#air)
   - [jarl](#jarl)
   - [Ark](#ark)
+  - [arf](#arf)
   - [Chrome Headless Shell](#chrome-headless-shell)
   - [AI & Developer Tools](#ai--developer-tools)
     - [GitHub MCP Server](#github-mcp-server)
@@ -332,6 +333,21 @@ scoop install r-bucket/ark
 
 # update
 scoop update ark
+```
+
+### arf
+
+[arf](https://github.com/eitsupi/arf) is an Alternative R Frontend — a modern R console written in Rust.
+
+> [!WARNING]
+> arf is under active development. Check the [project README](https://github.com/eitsupi/arf) for current status.
+
+```powershell
+# install
+scoop install arf
+
+# update
+scoop update arf
 ```
 
 ### Chrome Headless Shell
