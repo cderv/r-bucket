@@ -1,10 +1,10 @@
 {
-    "version": "2026.02.0-129",
+    "version": "2026.02.0-135",
     "description": "Daily version of Positron, a next-generation data science IDE.",
     "homepage": "https://positron.posit.co",
     "license": "Elastic-2.0",
-    "url": "https://cdn.posit.co/positron/dailies/win/x86_64/Positron-2026.02.0-129-UserSetup-x64.exe",
-    "hash": "5faf8fd06822b8e61fe9e7d7e0da9a77f64274df39633acf7bdbbc97f33914af",
+    "url": "https://cdn.posit.co/positron/dailies/win/x86_64/Positron-2026.02.0-135-UserSetup-x64.exe",
+    "hash": "56368332b74894b09559e094f7999764040c02fac4f408d85120b414570e5744",
     "installer": {
         "args": [
             "/VERYSILENT",
