@@ -413,14 +413,14 @@ scoop update beans
 
 #### roborev
 
-[roborev](https://github.com/wesm/roborev) is a background agent that reviews your git commits autonomously while you work. It provides both CLI and TUI interfaces.
+[roborev](https://github.com/roborev-dev/roborev) is a background agent that reviews your git commits autonomously while you work. It provides both CLI and TUI interfaces. See the [project README](https://github.com/roborev-dev/roborev#readme) for setup and usage.
 
 ```powershell
 scoop install roborev
 scoop update roborev
 ```
 
-Two binaries are available: `roborev` (CLI) and `roborevd` (daemon for background reviews).
+**Skills for Claude Code / Codex:** roborev includes optional skills that integrate with Claude Code and Codex. After installing roborev, run `roborev skills install` to add them. When updating via Scoop, skills are automatically updated to match the new version.
 
 ### rsvg-convert
 
