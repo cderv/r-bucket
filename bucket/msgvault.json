@@ -1,10 +1,10 @@
 {
-    "version": "0.1.2",
+    "version": "0.1.4",
     "description": "Archive email and chat with offline search, analytics, and AI query. Powered by DuckDB.",
     "homepage": "https://www.msgvault.io/",
     "license": "MIT",
-    "url": "https://github.com/wesm/msgvault/releases/download/v0.1.2/msgvault_0.1.2_windows_amd64.zip",
-    "hash": "1b663fe9617e862ed5202b7c3c1e41bf014f5aa0b62a70582d16c32dd5774b46",
+    "url": "https://github.com/wesm/msgvault/releases/download/v0.1.4/msgvault_0.1.4_windows_amd64.zip",
+    "hash": "0d6676853ce435cb4c0ebf918b457155a154bcac7c868f25ae00825d4864749a",
     "bin": "msgvault.exe",
     "checkver": {
         "github": "https://github.com/wesm/msgvault"
