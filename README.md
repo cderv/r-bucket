@@ -37,6 +37,7 @@ This repos contains some manifests I use to quickly install and update some appl
     - [beads-rust](#beads-rust)
     - [beans](#beans)
     - [roborev](#roborev)
+    - [msgvault](#msgvault)
   - [rsvg-convert](#rsvg-convert)
 - [To install scoop](#to-install-scoop)
 - [Add this scoop bucket](#add-this-scoop-bucket)
@@ -421,6 +422,22 @@ scoop update roborev
 ```
 
 **Skills for Claude Code / Codex:** roborev includes optional skills that integrate with Claude Code and Codex. After installing roborev, run `roborev skills install` to add them. When updating via Scoop, skills are automatically updated to match the new version.
+
+#### msgvault
+
+> [!WARNING]
+> msgvault is pre-alpha software. APIs, storage format, and CLI flags may change without notice.
+
+[msgvault](https://www.msgvault.io/) archives email and chat messages for offline search, analytics, and AI-powered queries over your full message history. Built by Wes McKinney (creator of pandas) and powered by DuckDB. See the [announcement blog post](https://wesmckinney.com/blog/announcing-msgvault).
+
+Currently supports Gmail, with other messaging platforms planned.
+
+```powershell
+scoop install msgvault
+scoop update msgvault
+```
+
+OAuth setup requires a Google Cloud project with Gmail API enabled. See the [Setup Guide](https://msgvault.io/guides/oauth-setup/) for instructions.
 
 ### rsvg-convert
 

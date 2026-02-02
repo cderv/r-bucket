@@ -1,0 +1,21 @@
+{
+    "version": "0.1.2",
+    "description": "Archive email and chat with offline search, analytics, and AI query. Powered by DuckDB.",
+    "homepage": "https://www.msgvault.io/",
+    "license": "MIT",
+    "url": "https://github.com/wesm/msgvault/releases/download/v0.1.2/msgvault_0.1.2_windows_amd64.zip",
+    "hash": "1b663fe9617e862ed5202b7c3c1e41bf014f5aa0b62a70582d16c32dd5774b46",
+    "bin": "msgvault.exe",
+    "checkver": {
+        "github": "https://github.com/wesm/msgvault"
+    },
+    "autoupdate": {
+        "url": "https://github.com/wesm/msgvault/releases/download/v$version/msgvault_$version_windows_amd64.zip"
+    },
+    "notes": [
+        "Pre-alpha software: APIs, storage format, and CLI flags may change without notice.",
+        "OAuth setup requires a Google Cloud project with Gmail API enabled.",
+        "See https://msgvault.io/guides/oauth-setup/ for step-by-step instructions.",
+        "Data is stored in ~/.msgvault/ (override with MSGVAULT_HOME environment variable)."
+    ]
+}
