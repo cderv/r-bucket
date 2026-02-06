@@ -34,6 +34,7 @@ This repos contains some manifests I use to quickly install and update some appl
   - [AI & Developer Tools](#ai--developer-tools)
     - [GitHub MCP Server](#github-mcp-server)
     - [Beads](#beads)
+    - [Beads Task-Issue Tracker](#beads-task-issue-tracker)
     - [beads-rust](#beads-rust)
     - [beans](#beans)
     - [roborev](#roborev)
@@ -390,6 +391,15 @@ scoop update beads
 ```
 
 The binary is available as `bd`. See the [project README](https://github.com/steveyegge/beads#readme) for setup instructions (`bd init`), agent integration, and usage details.
+
+#### Beads Task-Issue Tracker
+
+[Beads Task-Issue Tracker](https://github.com/w3dev33/beads-task-issue-tracker) is a lightweight desktop app for managing Beads issues outside your IDE. Built with Tauri, it provides a GUI for browsing and managing beads issues. Requires the `bd` CLI (installed automatically as a dependency).
+
+```powershell
+scoop install beads-task-issue-tracker
+scoop update beads-task-issue-tracker
+```
 
 #### beads-rust
 
