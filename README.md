@@ -449,6 +449,26 @@ scoop update msgvault
 
 OAuth setup requires a Google Cloud project with Gmail API enabled. See the [Setup Guide](https://msgvault.io/guides/oauth-setup/) for instructions.
 
+### mq
+
+[mq](https://mqlang.org/) is a jq-like CLI for Markdown processing. It queries, filters, and transforms Markdown documents using familiar jq-style syntax. Useful for LLM workflows, documentation management, and content analysis. See the [documentation](https://mqlang.org/docs/) for the full query language reference.
+
+```powershell
+# Core CLI - query, filter, and transform Markdown
+scoop install mq
+
+# Language Server for IDE integration
+scoop install mq-lsp
+
+# Debugger (experimental)
+scoop install mq-dbg
+
+# Web crawler - converts HTML pages to Markdown
+scoop install mqcr
+```
+
+A [VS Code extension](https://marketplace.visualstudio.com/items?itemName=harehare.mq-lang) (`mq-lang`) is also available for syntax highlighting and LSP integration.
+
 ### rsvg-convert
 
 [rsvg-convert](https://wiki.gnome.org/Projects/LibRsvg) is a command-line tool for rendering SVG files to various formats (png, ps, pdf, xml, jpg, gif, tiff, wmf, emf, ico). This bucket provides the official GNOME librsvg build from SourceForge.
