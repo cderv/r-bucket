@@ -460,6 +460,9 @@ scoop install mq
 # Language Server for IDE integration
 scoop install mq-lsp
 
+# Terminal UI - interactive Markdown exploration
+scoop install mq-tui
+
 # Debugger (experimental)
 scoop install mq-dbg
 
@@ -467,7 +470,7 @@ scoop install mq-dbg
 scoop install mqcr
 ```
 
-A [VS Code extension](https://marketplace.visualstudio.com/items?itemName=harehare.mq-lang) (`mq-lang`) is also available for syntax highlighting and LSP integration.
+Installing `mq-tui` copies the binary to `~/.mq/bin/` so that `mq tui file.md` works as a subcommand. A [VS Code extension](https://marketplace.visualstudio.com/items?itemName=harehare.mq-lang) (`mq-lang`) is also available for syntax highlighting and LSP integration.
 
 ### rsvg-convert
 
