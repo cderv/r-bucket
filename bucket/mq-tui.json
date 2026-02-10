@@ -1,10 +1,10 @@
 {
-    "version": "0.1.8",
+    "version": "0.1.9",
     "description": "Terminal UI for the mq Markdown processor",
     "homepage": "https://mqlang.org/",
     "license": "MIT",
-    "url": "https://github.com/harehare/mq-tui/releases/download/v0.1.8/mq-tui-x86_64-pc-windows-msvc.exe#/mq-tui.exe",
-    "hash": "e0ebecfb26725d784513de73316d2f10f6c06716f255b5c7643b2413b705fa3d",
+    "url": "https://github.com/harehare/mq-tui/releases/download/v0.1.9/mq-tui-x86_64-pc-windows-msvc.exe#/mq-tui.exe",
+    "hash": "5d070dacd3fba269c5aa34b9a1240b04fa3c4f8cbda76aac678b8da18ab443ae",
     "bin": "mq-tui.exe",
     "pre_install": [
         "$mqTui = Join-Path $env:USERPROFILE '.mq\\bin\\mq-tui'",
