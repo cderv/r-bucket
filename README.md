@@ -470,7 +470,7 @@ scoop install mq-dbg
 scoop install mqcr
 ```
 
-Installing `mq-tui` copies the binary to `~/.mq/bin/` so that `mq tui file.md` works as a subcommand. A [VS Code extension](https://marketplace.visualstudio.com/items?itemName=harehare.mq-lang) (`mq-lang`) is also available for syntax highlighting and LSP integration.
+With `mq` v0.5.14+, `mq tui file.md` finds `mq-tui` on PATH automatically. A [VS Code extension](https://marketplace.visualstudio.com/items?itemName=harehare.mq-lang) (`mq-lang`) is also available for syntax highlighting and LSP integration.
 
 ### rsvg-convert
 
