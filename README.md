@@ -39,6 +39,7 @@ This repos contains some manifests I use to quickly install and update some appl
     - [beans](#beans)
     - [roborev](#roborev)
     - [msgvault](#msgvault)
+    - [AgentsView](#agentsview)
   - [rsvg-convert](#rsvg-convert)
 - [To install scoop](#to-install-scoop)
 - [Add this scoop bucket](#add-this-scoop-bucket)
@@ -448,6 +449,15 @@ scoop update msgvault
 ```
 
 OAuth setup requires a Google Cloud project with Gmail API enabled. See the [Setup Guide](https://msgvault.io/guides/oauth-setup/) for instructions.
+
+#### AgentsView
+
+[AgentsView](https://www.agentsview.io/) is a fast local viewer for AI coding agent sessions (Claude Code, Codex, Gemini CLI) with analytics dashboard and full-text search. Built by Wes McKinney. See the [project README](https://github.com/wesm/agentsview#readme) for details.
+
+```powershell
+scoop install agentsview
+scoop update agentsview
+```
 
 ### mq
 
