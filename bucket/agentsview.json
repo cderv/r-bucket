@@ -1,10 +1,10 @@
 {
-    "version": "0.3.2",
+    "version": "0.4.0",
     "description": "Fast local coding agent session viewer with analytics dashboard and full text search.",
     "homepage": "https://www.agentsview.io/",
     "license": "MIT",
-    "url": "https://github.com/wesm/agentsview/releases/download/v0.3.2/agentsview_0.3.2_windows_amd64.zip",
-    "hash": "cb2bdcd560eb53a1fcde9213590768aff839b3505e87dad29d5ce6b0f340e466",
+    "url": "https://github.com/wesm/agentsview/releases/download/v0.4.0/agentsview_0.4.0_windows_amd64.zip",
+    "hash": "416c810be79272868751d3226d798b4db14245c32583715f6bd8dfcb1e7cf07d",
     "bin": "agentsview.exe",
     "checkver": {
         "github": "https://github.com/wesm/agentsview"
