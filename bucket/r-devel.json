@@ -4,7 +4,7 @@
     "version": "r89480",
     "license": "GPL-2.0-only",
     "url": "https://cloud.r-project.org/bin/windows/base/R-devel-win.exe",
-    "hash": "md5:428aa5925a8c51be3bc51aa30ca2e2ba",
+    "hash": "md5:0bd2f9fce5b15bf95b40b33b704e25b1",
     "innosetup": true,
     "architecture": {
         "64bit": {
