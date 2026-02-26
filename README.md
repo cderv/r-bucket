@@ -478,6 +478,9 @@ scoop install mq-dbg
 
 # Web crawler - converts HTML pages to Markdown
 scoop install mqcr
+
+# MCP server - Markdown/HTML processing for AI assistants
+scoop install mq-mcp
 ```
 
 With `mq` v0.5.14+, `mq tui file.md` finds `mq-tui` on PATH automatically. A [VS Code extension](https://marketplace.visualstudio.com/items?itemName=harehare.mq-lang) (`mq-lang`) is also available for syntax highlighting and LSP integration.
