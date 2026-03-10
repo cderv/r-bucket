@@ -40,6 +40,7 @@ This repos contains some manifests I use to quickly install and update some appl
     - [roborev](#roborev)
     - [msgvault](#msgvault)
     - [AgentsView](#agentsview)
+    - [AgentsView Desktop](#agentsview-desktop)
   - [rsvg-convert](#rsvg-convert)
 - [To install scoop](#to-install-scoop)
 - [Add this scoop bucket](#add-this-scoop-bucket)
@@ -458,6 +459,18 @@ OAuth setup requires a Google Cloud project with Gmail API enabled. See the [Set
 scoop install agentsview
 scoop update agentsview
 ```
+
+#### AgentsView Desktop
+
+The desktop app (experimental) provides a Tauri-based GUI for browsing agent sessions. It bundles the CLI as a sidecar. Installed portably via NSIS extraction — no admin required.
+
+```powershell
+scoop install agentsview-desktop
+scoop update agentsview-desktop
+```
+
+> [!NOTE]
+> The built-in Tauri auto-updater may conflict with Scoop updates. Set `AGENTSVIEW_DESKTOP_AUTOUPDATE=0` to disable it. For the CLI only, install `agentsview` instead.
 
 ### mq
 

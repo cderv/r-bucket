@@ -1,0 +1,30 @@
+{
+    "version": "0.12.0",
+    "description": "AgentsView desktop app - local coding agent session viewer with analytics dashboard. (Experimental)",
+    "homepage": "https://www.agentsview.io/",
+    "license": "MIT",
+    "url": "https://github.com/wesm/agentsview/releases/download/v0.12.0/AgentsView_0.12.0_x64-setup.exe#/dl.7z",
+    "hash": "a0218b794713e8931d8fc3f9904b68ee2bffde212740513f14f68eafded10ddd",
+    "pre_install": "Remove-Item \"$dir\\`$*\", \"$dir\\Uninst*\" -Force -Recurse",
+    "shortcuts": [
+        [
+            "agentsview-desktop.exe",
+            "AgentsView"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/wesm/agentsview"
+    },
+    "autoupdate": {
+        "url": "https://github.com/wesm/agentsview/releases/download/v$version/AgentsView_$version_x64-setup.exe#/dl.7z",
+        "hash": {
+            "url": "https://github.com/wesm/agentsview/releases/download/v$version/SHA256SUMS-desktop"
+        }
+    },
+    "notes": [
+        "AgentsView Desktop is experimental.",
+        "The built-in auto-updater may conflict with Scoop updates.",
+        "Set AGENTSVIEW_DESKTOP_AUTOUPDATE=0 to disable it.",
+        "For the CLI only, install 'agentsview' instead."
+    ]
+}
