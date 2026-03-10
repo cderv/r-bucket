@@ -470,7 +470,7 @@ scoop update agentsview-desktop
 ```
 
 > [!NOTE]
-> The built-in Tauri auto-updater may conflict with Scoop updates. Set `AGENTSVIEW_DESKTOP_AUTOUPDATE=0` to disable it. For the CLI only, install `agentsview` instead.
+> The built-in Tauri auto-updater is disabled automatically (`AGENTSVIEW_DESKTOP_AUTOUPDATE=0`) to avoid conflicts with Scoop-managed updates. The environment variable is removed on uninstall. For the CLI only, install `agentsview` instead.
 
 ### mq
 
