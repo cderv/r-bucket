@@ -41,6 +41,7 @@ This repos contains some manifests I use to quickly install and update some appl
     - [msgvault](#msgvault)
     - [AgentsView](#agentsview)
     - [AgentsView Desktop](#agentsview-desktop)
+    - [rtk](#rtk)
   - [rsvg-convert](#rsvg-convert)
 - [To install scoop](#to-install-scoop)
 - [Add this scoop bucket](#add-this-scoop-bucket)
@@ -471,6 +472,17 @@ scoop update agentsview-desktop
 
 > [!NOTE]
 > The built-in Tauri auto-updater is disabled automatically (`AGENTSVIEW_DESKTOP_AUTOUPDATE=0`) to avoid conflicts with Scoop-managed updates. The environment variable is removed on uninstall. For the CLI only, install `agentsview` instead.
+
+#### rtk
+
+[rtk](https://github.com/rtk-ai/rtk) (Rust Token Killer) is a CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. It sits between an AI agent and the shell, filtering and compressing command output before it reaches the LLM context.
+
+```powershell
+scoop install rtk
+scoop update rtk
+```
+
+After installing, run `rtk init --global` to set up the Claude Code hook for automatic token reduction.
 
 ### mq
 
