@@ -43,6 +43,9 @@ This repos contains some manifests I use to quickly install and update some appl
     - [AgentsView Desktop](#agentsview-desktop)
     - [rtk](#rtk)
   - [rsvg-convert](#rsvg-convert)
+  - [Password Managers](#password-managers)
+    - [Proton Pass CLI](#proton-pass-cli)
+    - [Dashlane CLI](#dashlane-cli)
 - [To install scoop](#to-install-scoop)
 - [Add this scoop bucket](#add-this-scoop-bucket)
 - [Install an app](#install-an-app)
@@ -532,7 +535,27 @@ scoop install rsvg-convert-miyako
 scoop update rsvg-convert-miyako
 ```
 
-## To install scoop 
+### Password Managers
+
+#### Proton Pass CLI
+
+[Proton Pass CLI](https://proton.me/pass/download) is the command-line interface for Proton Pass, allowing you to access your vault from the terminal, servers, and CI/CD pipelines.
+
+```powershell
+scoop install proton-pass-cli
+scoop update proton-pass-cli
+```
+
+#### Dashlane CLI
+
+[Dashlane CLI](https://cli.dashlane.com/) lets you access your Dashlane secrets from the terminal, servers, and CI/CD pipelines.
+
+```powershell
+scoop install dashlane-cli
+scoop update dashlane-cli
+```
+
+## To install scoop
 
 See https://github.com/lukesampson/scoop
 
