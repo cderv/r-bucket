@@ -46,6 +46,8 @@ This repos contains some manifests I use to quickly install and update some appl
   - [Password Managers](#password-managers)
     - [Proton Pass CLI](#proton-pass-cli)
     - [Dashlane CLI](#dashlane-cli)
+  - [Cloud & Infrastructure](#cloud--infrastructure)
+    - [OVHcloud CLI](#ovhcloud-cli)
 - [To install scoop](#to-install-scoop)
 - [Add this scoop bucket](#add-this-scoop-bucket)
 - [Install an app](#install-an-app)
@@ -553,6 +555,17 @@ scoop update proton-pass-cli
 ```powershell
 scoop install dashlane-cli
 scoop update dashlane-cli
+```
+
+### Cloud & Infrastructure
+
+#### OVHcloud CLI
+
+[OVHcloud CLI](https://github.com/ovh/ovhcloud-cli) is a unified command-line interface for managing OVHcloud products and services. It enables automation, provisioning, and lookups across OVHcloud infrastructure.
+
+```powershell
+scoop install ovhcloud-cli
+scoop update ovhcloud-cli
 ```
 
 ## To install scoop
