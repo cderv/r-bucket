@@ -503,6 +503,9 @@ scoop install mq-lsp
 # Terminal UI - interactive Markdown exploration
 scoop install mq-tui
 
+# Syntax and semantic checker for .mq files
+scoop install mq-check
+
 # Debugger (experimental)
 scoop install mq-dbg
 
