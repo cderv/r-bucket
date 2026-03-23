@@ -1,12 +1,12 @@
 {
-    "version": "0.1.31",
+    "version": "0.1.32",
     "description": "Fast Rust port of Beads issue tracker for AI coding agents",
     "homepage": "https://github.com/Dicklesworthstone/beads_rust",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Dicklesworthstone/beads_rust/releases/download/v0.1.31/br-v0.1.31-windows_amd64.zip",
-            "hash": "fec676ea38278f87650baca627a6aff2c40986bcc91072c621b71277fcdc69d7"
+            "url": "https://github.com/Dicklesworthstone/beads_rust/releases/download/v0.1.32/br-v0.1.32-windows_amd64.zip",
+            "hash": "68e90c096901bd64dea5c33958d20e1bcd60ffcaf84049fb93cc6ca4df1a8d39"
         }
     },
     "bin": "br.exe",
