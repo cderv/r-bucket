@@ -35,6 +35,7 @@ This repos contains some manifests I use to quickly install and update some appl
     - [GitHub MCP Server](#github-mcp-server)
     - [Beads](#beads)
     - [Beads Task-Issue Tracker](#beads-task-issue-tracker)
+    - [beads-viewer](#beads-viewer)
     - [beads-rust](#beads-rust)
     - [beans](#beans)
     - [roborev](#roborev)
@@ -42,7 +43,18 @@ This repos contains some manifests I use to quickly install and update some appl
     - [AgentsView](#agentsview)
     - [AgentsView Desktop](#agentsview-desktop)
     - [rtk](#rtk)
+    - [ollama](#ollama)
+  - [mq](#mq)
   - [rsvg-convert](#rsvg-convert)
+  - [Editors & Productivity](#editors--productivity)
+    - [octarine](#octarine)
+  - [Utilities](#utilities)
+    - [pstree](#pstree)
+    - [tree](#tree)
+    - [fq](#fq)
+    - [py.exe](#pyexe)
+    - [chezmoi-modify-manager](#chezmoi-modify-manager)
+    - [verapdf-docker](#verapdf-docker)
   - [Password Managers](#password-managers)
     - [Proton Pass CLI](#proton-pass-cli)
     - [Dashlane CLI](#dashlane-cli)
@@ -143,6 +155,7 @@ scoop install positron-daily
 * `tinytex` contains [several tex packages already installed](https://github.com/yihui/tinytex/blob/master/tools/pkgs-custom.txt) that are the main one used by Rmarkdown. If you are an R user we recommand this one. 
 * `tinytex-min` is infra-only and contains only Tex Live with no package installed. Use this one if you want only Tex Live for Windows using [TinyTeX distribution](https://yihui.org/tinytex/) without the selected packages, for CI workflow for example. 
 * `tinytex-extra` contains some extra packages installed compare to `tinytex`.
+* `tinitex` (experimental) is an intelligent LaTeX compilation binary that orchestrates multiple compilation passes with TinyTeX or TeX Live.
 
 See full documentation at https://yihui.org/tinytex/ and about the releases at https://github.com/yihui/tinytex-releases#scoop-package
 
@@ -409,6 +422,15 @@ scoop install beads-task-issue-tracker
 scoop update beads-task-issue-tracker
 ```
 
+#### beads-viewer
+
+[beads-viewer](https://github.com/Dicklesworthstone/beads_viewer) is a graph-aware TUI for the Beads issue tracker. It provides an interactive terminal interface for browsing and navigating issues and their dependencies.
+
+```powershell
+scoop install beads-viewer
+scoop update beads-viewer
+```
+
 #### beads-rust
 
 [beads-rust](https://github.com/Dicklesworthstone/beads_rust) is a fast Rust port of Beads, a local-first issue tracker for git repositories. It stores issues in SQLite with JSONL export for git-friendly collaboration.
@@ -489,6 +511,15 @@ scoop update rtk
 
 After installing, run `rtk init --global` to set up the Claude Code hook for automatic token reduction.
 
+#### ollama
+
+[ollama](https://github.com/ollama/ollama) lets you run large language models locally. Supports Llama, Mistral, Gemma, and many other models.
+
+```powershell
+scoop install ollama
+scoop update ollama
+```
+
 ### mq
 
 [mq](https://mqlang.org/) is a jq-like CLI for Markdown processing. It queries, filters, and transforms Markdown documents using familiar jq-style syntax. Useful for LLM workflows, documentation management, and content analysis. See the [documentation](https://mqlang.org/docs/) for the full query language reference.
@@ -514,6 +545,12 @@ scoop install mqcr
 
 # MCP server - Markdown/HTML processing for AI assistants
 scoop install mq-mcp
+
+# Terminal Markdown editor with WYSIWYG rendering and LSP support
+scoop install mq-edit
+
+# Markdown renderer with syntax highlighting and rich text formatting
+scoop install mq-view
 ```
 
 With `mq` v0.5.14+, `mq tui file.md` finds `mq-tui` on PATH automatically. A [VS Code extension](https://marketplace.visualstudio.com/items?itemName=harehare.mq-lang) (`mq-lang`) is also available for syntax highlighting and LSP integration.
@@ -538,6 +575,75 @@ scoop install rsvg-convert-miyako
 
 # update
 scoop update rsvg-convert-miyako
+```
+
+### Editors & Productivity
+
+#### octarine
+
+[octarine](https://octarine.app) is a private, Markdown-based note-taking app focused on speed, simplicity, and data ownership.
+
+```powershell
+scoop install octarine
+scoop update octarine
+```
+
+### Utilities
+
+General-purpose CLI utilities.
+
+#### pstree
+
+[pstree](https://github.com/n8tb1t/Tree) lists directory contents in a tree-like format with colorization and many display options.
+
+```powershell
+scoop install pstree
+scoop update pstree
+```
+
+#### tree
+
+[tree](https://sourceforge.net/projects/gnuwin32/) is a recursive directory listing program that produces a depth-indented listing of files.
+
+```powershell
+scoop install tree
+scoop update tree
+```
+
+#### fq
+
+[fq](https://github.com/wader/fq) is a tool, language and set of decoders for inspecting and querying binary data, similar to jq for JSON.
+
+```powershell
+scoop install fq
+scoop update fq
+```
+
+#### py.exe
+
+[py.exe](https://docs.python.org/3/using/windows.html#launcher) is the Python launcher for Windows. It aids in locating and executing different Python versions installed on the system.
+
+```powershell
+scoop install py.exe
+scoop update py.exe
+```
+
+#### chezmoi-modify-manager
+
+[chezmoi-modify-manager](https://vorpalblade.github.io/chezmoi_modify_manager/) is an addon for chezmoi that handles settings files containing a mix of settings and state, with support for INI-style files.
+
+```powershell
+scoop install chezmoi-modify-manager
+scoop update chezmoi-modify-manager
+```
+
+#### verapdf-docker
+
+[verapdf-docker](https://verapdf.org/) is a Docker wrapper for veraPDF PDF validation, for use with Quarto PDF output validation.
+
+```powershell
+scoop install verapdf-docker
+scoop update verapdf-docker
 ```
 
 ### Password Managers
