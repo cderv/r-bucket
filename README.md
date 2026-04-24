@@ -29,6 +29,7 @@ This repos contains some manifests I use to quickly install and update some appl
   - [air](#air)
   - [jarl](#jarl)
   - [Ark](#ark)
+  - [ggsql](#ggsql)
   - [arf](#arf)
   - [Chrome Headless Shell](#chrome-headless-shell)
   - [AI & Developer Tools](#ai--developer-tools)
@@ -357,6 +358,20 @@ scoop install r-bucket/ark
 # update
 scoop update ark
 ```
+
+### ggsql
+
+[ggsql](https://ggsql.org) is a SQL extension for declarative data visualization based on the Grammar of Graphics. It ships with a Jupyter kernel (`ggsql-jupyter`) so charts can be authored directly in notebooks. See the [project GitHub](https://github.com/posit-dev/ggsql) for docs and examples.
+
+```powershell
+# install
+scoop install ggsql
+
+# update
+scoop update ggsql
+```
+
+After installing, run `ggsql-jupyter --install` to register the Jupyter kernel (see upstream docs for details).
 
 ### arf
 
