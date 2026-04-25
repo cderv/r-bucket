@@ -52,7 +52,7 @@
     ],
     "uninstaller": {
         "script": [
-            "tlmgr info --list --only-installed --data name > $env:TMP/tinytex-pkg-installed-$(Get-Date -Format ddMMyyHH).txt",
+            "& \"$dir\\bin\\windows\\tlmgr.bat\" info --list --only-installed --data name > $env:TMP/tinytex-pkg-installed-$(Get-Date -Format ddMMyyHH).txt",
             "echo \"--> Running tlmgr path remove\"",
             "Start-Process \"cmd.exe\" \"/c `\"$dir\\bin\\windows\\tlmgr.bat path remove`\"\" -Wait -NoNewWindow"
         ]
