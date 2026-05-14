@@ -1,12 +1,12 @@
 {
-    "version": "2026.05.0+194.pro25-daily",
+    "version": "2026.05.0+207.pro9-daily",
     "homepage": "https://posit.co/products/open-source/rstudio",
     "description": "An IDE for R, which includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.",
     "license": "https://rstudio.com/about/eula/",
     "architecture": {
         "64bit": {
-            "url": "https://s3.amazonaws.com/rstudio-ide-build/electron/windows/RStudio-pro-2026.05.0-daily-194.pro25.zip",
-            "hash": "09c78e4b6a49f1181005a77cfdfccd095174abb6025aa0aff757fbea90bad333"
+            "url": "https://s3.amazonaws.com/rstudio-ide-build/electron/windows/RStudio-pro-2026.05.0-daily-207.pro9.zip",
+            "hash": "ed848f56eba4c7a9d61ecab78202ad673a20c0607c9f4ca3197a680fe5c37df8"
         }
     },
     "bin": [
