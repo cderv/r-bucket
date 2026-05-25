@@ -56,6 +56,7 @@ This repos contains some manifests I use to quickly install and update some appl
     - [py.exe](#pyexe)
     - [chezmoi-modify-manager](#chezmoi-modify-manager)
     - [verapdf-docker](#verapdf-docker)
+    - [just-lsp](#just-lsp)
   - [Password Managers](#password-managers)
     - [Proton Pass CLI](#proton-pass-cli)
     - [Dashlane CLI](#dashlane-cli)
@@ -659,6 +660,15 @@ scoop update chezmoi-modify-manager
 ```powershell
 scoop install verapdf-docker
 scoop update verapdf-docker
+```
+
+#### just-lsp
+
+[just-lsp](https://github.com/terror/just-lsp) is a language server for [just](https://github.com/casey/just), the command runner. Provides completions, hover docs, jump to definition, diagnostics, rename, references, and formatting for justfiles.
+
+```powershell
+scoop install just-lsp
+scoop update just-lsp
 ```
 
 ### Password Managers
