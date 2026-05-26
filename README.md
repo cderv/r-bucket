@@ -497,7 +497,7 @@ OAuth setup requires a Google Cloud project with Gmail API enabled. See the [Set
 
 #### AgentsView
 
-[AgentsView](https://www.agentsview.io/) is a fast local viewer for AI coding agent sessions (Claude Code, Codex, Gemini CLI) with analytics dashboard and full-text search. Built by Wes McKinney. See the [project README](https://github.com/wesm/agentsview#readme) for details.
+[AgentsView](https://www.agentsview.io/) is a fast local viewer for AI coding agent sessions (Claude Code, Codex, Gemini CLI) with analytics dashboard and full-text search. Built by Wes McKinney. See the [project README](https://github.com/kenn-io/agentsview#readme) for details.
 
 ```powershell
 scoop install agentsview
