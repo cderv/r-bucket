@@ -152,16 +152,16 @@ scoop install positron-daily
 ### TinyTeX - Tex Live distribution
 > Experimental - this could still change
 
-3 binaries are available from [tinytex-releases](https://github.com/yihui/tinytex-releases) but only one can be installed at the same time. That is because a _shim_ for `tlmgr` command is added to _scoop_ and available to PATH, and that would be overriden. (And honestly, you only need one). 
+3 binaries are available from [tinytex-releases](https://github.com/rstudio/tinytex-releases) but only one can be installed at the same time. That is because a _shim_ for `tlmgr` command is added to _scoop_ and available to PATH, and that would be overriden. (And honestly, you only need one). 
 
-* `tinytex` contains [several tex packages already installed](https://github.com/yihui/tinytex/blob/master/tools/pkgs-custom.txt) that are the main one used by Rmarkdown. If you are an R user we recommand this one. 
+* `tinytex` contains [several tex packages already installed](https://github.com/rstudio/tinytex/blob/master/tools/pkgs-custom.txt) that are the main one used by Rmarkdown. If you are an R user we recommand this one. 
 * `tinytex-min` is infra-only and contains only Tex Live with no package installed. Use this one if you want only Tex Live for Windows using [TinyTeX distribution](https://yihui.org/tinytex/) without the selected packages, for CI workflow for example. 
 * `tinytex-extra` contains some extra packages installed compare to `tinytex`.
 * `tinitex` (experimental) is an intelligent LaTeX compilation binary that orchestrates multiple compilation passes with TinyTeX or TeX Live.
 
-See full documentation at https://yihui.org/tinytex/ and about the releases at https://github.com/yihui/tinytex-releases#scoop-package
+See full documentation at https://yihui.org/tinytex/ and about the releases at https://github.com/rstudio/tinytex-releases#scoop-package
 
-The binaries are synced from https://github.com/yihui/tinytex-releases/releases
+The binaries are synced from https://github.com/rstudio/tinytex-releases/releases
 
 ### R 
 
