@@ -38,6 +38,7 @@ This repos contains some manifests I use to quickly install and update some appl
     - [Beads Task-Issue Tracker](#beads-task-issue-tracker)
     - [beads-viewer](#beads-viewer)
     - [beads-rust](#beads-rust)
+    - [braid](#braid)
     - [beans](#beans)
     - [roborev](#roborev)
     - [msgvault](#msgvault)
@@ -457,6 +458,18 @@ scoop update beads-viewer
 ```powershell
 scoop install beads-rust
 scoop update beads-rust
+```
+
+#### braid
+
+> [!WARNING]
+> braid is experimental software under active development. APIs and storage format may change without notice.
+
+[braid](https://github.com/cscheid/braid) is an automerge-centric issue tracker for LLM agents. It stores issues locally and uses automerge CRDTs for conflict-free collaboration.
+
+```powershell
+scoop install braid
+scoop update braid
 ```
 
 #### beans

@@ -1,0 +1,21 @@
+{
+    "version": "0.3.2",
+    "description": "An automerge-centric issue tracker for LLM agents",
+    "homepage": "https://github.com/cscheid/braid",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/cscheid/braid/releases/download/v0.3.2/braid-0.3.2-windows_amd64.zip",
+            "hash": "2d4482231dcbecaa327bda890e2a4dd959a260c0056c5a6355cab0bd47f623ea"
+        }
+    },
+    "bin": "braid.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/cscheid/braid/releases/download/v$version/braid-$version-windows_amd64.zip"
+            }
+        }
+    }
+}
