@@ -51,6 +51,7 @@ This repos contains some manifests I use to quickly install and update some appl
   - [Editors & Productivity](#editors--productivity)
     - [octarine](#octarine)
   - [Utilities](#utilities)
+    - [delve](#delve)
     - [pstree](#pstree)
     - [tree](#tree)
     - [fq](#fq)
@@ -620,6 +621,17 @@ scoop update octarine
 ### Utilities
 
 General-purpose CLI utilities.
+
+#### delve
+
+[delve](https://github.com/go-delve/delve) is a debugger for the Go programming language. It provides a simple, full-featured debugging interface for Go programs.
+
+```powershell
+scoop install delve
+scoop update delve
+```
+
+The binary is available as `dlv`. See the [project documentation](https://github.com/go-delve/delve/tree/master/Documentation) for usage.
 
 #### pstree
 
