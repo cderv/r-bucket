@@ -25,6 +25,7 @@ This repos contains some manifests I use to quickly install and update some appl
     - [Switching between stable and pre-release](#switching-between-stable-and-pre-release)
   - [Quarto Versions Manager - QVM](#quarto-versions-manager---qvm)
     - [Should I install `quarto` using `qvm` or install `quarto` with scoop directly ?](#should-i-install-quarto-using-qvm-or-install-quarto-with-scoop-directly-)
+  - [q2 (Quarto 2)](#q2-quarto-2)
   - [Sass migrator](#sass-migrator)
   - [air](#air)
   - [jarl](#jarl)
@@ -303,6 +304,21 @@ scoop install qvm
 
 # update
 scoop update qvm
+```
+
+### q2 (Quarto 2)
+
+[q2](https://github.com/quarto-dev/q2) is a Rust implementation of the next version of [Quarto](https://quarto.org). The goal is to replace parts of the TypeScript/Deno runtime with a unified Rust implementation.
+
+> [!WARNING]
+> q2 is **highly experimental** and not yet ready for production use. Release binaries exist so the team and early testers don't need a full Rust + Node toolchain. All APIs should be considered unstable and may completely change.
+
+```powershell
+# install
+scoop install q2
+
+# update
+scoop update q2
 ```
 
 ### Sass migrator
