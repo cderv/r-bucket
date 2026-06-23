@@ -1,10 +1,10 @@
 {
-    "version": "0.5.0",
+    "version": "0.6.0",
     "description": "Rust implementation of the next version of Quarto.",
     "homepage": "https://github.com/quarto-dev/q2",
     "license": "MIT",
-    "url": "https://github.com/quarto-dev/q2/releases/download/v0.5.0/q2-0.5.0-windows_amd64.zip",
-    "hash": "1f4c78f0152bcb9485a8b38f3a73ab2ffefe60a42349d2cf6638f489d66f732d",
+    "url": "https://github.com/quarto-dev/q2/releases/download/v0.6.0/q2-0.6.0-windows_amd64.zip",
+    "hash": "d50f7686a5920f45a7475b60c69d5b8524768698d266dd811b7dea62ab6c2922",
     "bin": "q2.exe",
     "checkver": "github",
     "autoupdate": {
