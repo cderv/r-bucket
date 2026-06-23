@@ -42,6 +42,7 @@ This repos contains some manifests I use to quickly install and update some appl
     - [braid](#braid)
     - [beans](#beans)
     - [roborev](#roborev)
+    - [kata](#kata)
     - [msgvault](#msgvault)
     - [AgentsView](#agentsview)
     - [AgentsView Desktop](#agentsview-desktop)
@@ -545,6 +546,15 @@ scoop update agentsview-desktop
 
 > [!NOTE]
 > The built-in Tauri auto-updater is disabled automatically (`AGENTSVIEW_DESKTOP_AUTOUPDATE=0`) to avoid conflicts with Scoop-managed updates. The environment variable is removed on uninstall. For the CLI only, install `agentsview` instead.
+
+#### kata
+
+[kata](https://www.katatracker.com) is a local-first issue tracker designed for AI-assisted software work. It provides an agent-friendly CLI and a human-facing TUI, storing issues locally in your repository.
+
+```powershell
+scoop install kata
+scoop update kata
+```
 
 #### rtk
 
