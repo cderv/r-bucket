@@ -1,10 +1,10 @@
 {
-    "version": "0.35.1",
+    "version": "0.35.2",
     "description": "Fast local coding agent session viewer with analytics dashboard and full text search.",
     "homepage": "https://www.agentsview.io/",
     "license": "MIT",
-    "url": "https://github.com/kenn-io/agentsview/releases/download/v0.35.1/agentsview_0.35.1_windows_amd64.zip",
-    "hash": "903fb40a1a82eaf25feb5afb557171adc3d5349d35b6b02d224d54149f597f8c",
+    "url": "https://github.com/kenn-io/agentsview/releases/download/v0.35.2/agentsview_0.35.2_windows_amd64.zip",
+    "hash": "24571bc759f54a104fd83b246d3547357e2686358c38d18a0992a2f724608cff",
     "bin": "agentsview.exe",
     "checkver": {
         "github": "https://github.com/kenn-io/agentsview"
