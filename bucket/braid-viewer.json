@@ -8,7 +8,10 @@
     "pre_install": "Remove-Item \"$dir\\`$*\", \"$dir\\Uninst*\" -Force -Recurse",
     "bin": "braid-viewer.exe",
     "shortcuts": [
-        ["braid-viewer.exe", "Braid Viewer"]
+        [
+            "braid-viewer.exe",
+            "Braid Viewer"
+        ]
     ],
     "checkver": {
         "github": "https://github.com/cscheid/braid",
