@@ -305,7 +305,13 @@ Required properties:
 - `license`: SPDX identifier or license URL
 - `url`: Download URL(s)
 - `hash`: SHA256 hash(es)
-- `bin` or `shortcuts`: How to make the app accessible
+- `bin` and/or `shortcuts`: How to make the app accessible — check the
+  upstream repo/docs for whether the app is CLI, GUI (tray/desktop), or
+  both, don't assume from the tech stack. A GUI/tray app needs
+  `shortcuts` (Start Menu entry, launched by double-click) even if it
+  also exposes a CLI and gets a `bin` shim — see `air.json`/`ark.json`
+  (CLI-only, `bin` alone) vs `octarine.json` (GUI, `bin` + `shortcuts`)
+  for the two shapes already in this bucket.
 
 ### 3. Add Automation (checkver/autoupdate)
 ```powershell
