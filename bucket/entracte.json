@@ -6,6 +6,12 @@
     "url": "https://github.com/drmowinckels/entracte/releases/download/v0.0.9/Entracte_0.0.9_x64-setup.exe#/dl.7z",
     "hash": "9bd43e69cfb4ac07cff00c02d636296201303127a4ee464d3eb0c5f80b856fee",
     "bin": "entracte.exe",
+    "shortcuts": [
+        [
+            "entracte.exe",
+            "Entracte"
+        ]
+    ],
     "checkver": {
         "github": "https://github.com/drmowinckels/entracte"
     },

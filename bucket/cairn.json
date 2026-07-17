@@ -7,6 +7,12 @@
     "hash": "7241b7a9b70b17d62bc182e32d09b52155c926e24ea21aa767289f6e8380bb61",
     "extract_dir": "PFiles\\Cairn",
     "bin": "cairn.exe",
+    "shortcuts": [
+        [
+            "cairn.exe",
+            "Cairn"
+        ]
+    ],
     "checkver": {
         "url": "https://github.com/drmowinckels/cairn/releases.atom",
         "regex": "Cairn v(?<version>[\\d.]+(?:-\\w+)?)</title>"
