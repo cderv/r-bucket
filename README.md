@@ -50,6 +50,9 @@ This repos contains some manifests I use to quickly install and update some appl
     - [ollama](#ollama)
   - [mq](#mq)
   - [rsvg-convert](#rsvg-convert)
+  - [Productivity & Time Management](#productivity--time-management)
+    - [Entracte](#entracte)
+    - [Cairn](#cairn)
   - [Editors & Productivity](#editors--productivity)
     - [octarine](#octarine)
   - [Utilities](#utilities)
@@ -632,6 +635,34 @@ scoop install rsvg-convert-miyako
 # update
 scoop update rsvg-convert-miyako
 ```
+
+### Productivity & Time Management
+
+Two desktop apps by [Dr. Mowinckel](https://github.com/drmowinckels), built outside her usual R stack — see her blog post [Outside My Stack: Building Entracte and Cairn With Claude](https://drmowinckels.io/blog/2026/outside-my-stack/) for the full story.
+
+#### Entracte
+
+[Entracte](https://entracte.drmowinckels.io/) is a cross-platform break reminder app — it lives in your menu bar / tray and nudges you to take breaks, with meeting/camera awareness, multi-monitor support, and a daily screen-time budget. Free and open source (Apache 2.0), with an optional paid Supporter pack for personalisation extras.
+
+```powershell
+scoop install entracte
+scoop update entracte
+```
+
+> [!NOTE]
+> Windows builds are currently unsigned — SmartScreen will show an "unknown publisher" warning on first launch. Click "More info" then "Run anyway" to proceed.
+
+#### Cairn
+
+[Cairn](https://cairn.drmowinckels.io/) is a quiet, local-first time tracker — no accounts, no cloud, no telemetry. It passively watches your work signals (IDE folder, git branch, browser domain, calendar) and uses user-defined rules to assign time to projects automatically.
+
+```powershell
+scoop install cairn
+scoop update cairn
+```
+
+> [!NOTE]
+> Cairn is in its first public beta (`0.0.X`). Windows build is unsigned.
 
 ### Editors & Productivity
 
