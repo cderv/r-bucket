@@ -46,6 +46,7 @@ This repos contains some manifests I use to quickly install and update some appl
     - [msgvault](#msgvault)
     - [AgentsView](#agentsview)
     - [AgentsView Desktop](#agentsview-desktop)
+    - [docbank](#docbank)
     - [rtk](#rtk)
     - [ollama](#ollama)
   - [mq](#mq)
@@ -549,6 +550,18 @@ scoop update agentsview-desktop
 
 > [!NOTE]
 > The built-in Tauri auto-updater is disabled automatically (`AGENTSVIEW_DESKTOP_AUTOUPDATE=0`) to avoid conflicts with Scoop-managed updates. The environment variable is removed on uninstall. For the CLI only, install `agentsview` instead.
+
+#### docbank
+
+> [!WARNING]
+> docbank is alpha software (pre-1.0). Keep independent copies of irreplaceable material and verify backups before relying on them.
+
+[docbank](https://docbank.ai) is a local-first system of record for documents (PDFs, images, text files, etc.) for you and your agents.
+
+```powershell
+scoop install docbank
+scoop update docbank
+```
 
 #### kata
 
