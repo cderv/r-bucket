@@ -19,6 +19,7 @@ This repos contains some manifests I use to quickly install and update some appl
     - [rig - R Installation Manager](#rig---r-installation-manager)
     - [R release and old releases](#r-release-and-old-releases)
     - [rv - new R package installer](#rv---new-r-package-installer)
+    - [ir - self-describing R scripts runner](#ir---self-describing-r-scripts-runner)
   - [Quarto CLI](#quarto-cli)
     - [Stable version](#stable-version)
     - [Pre-release version](#pre-release-version)
@@ -244,6 +245,18 @@ scoop install rv
 
 # update
 scoop update rv
+```
+
+### ir - self-describing R scripts runner
+
+[ir](https://github.com/r-lib/ir) runs R scripts and renders Quarto documents using runtime requirements (packages, R version) declared right in the file, resolving them with `pak`/`renv`/`rig` into a cached library. It also ships `rx`, a tool to run or install command-line executables provided by R packages. See the [announcement blog post](https://opensource.posit.co/blog/2026-07-23_ir-0-1-0/) and [documentation](https://r-lib.github.io/ir/) for details.
+
+```powershell
+# install
+scoop install ir
+
+# update
+scoop update ir
 ```
 
 ### Quarto CLI
