@@ -247,7 +247,7 @@ scoop install rv
 scoop update rv
 ```
 
-### ir - self-describing R scripts runner
+#### ir - self-describing R scripts runner
 
 [ir](https://github.com/r-lib/ir) runs R scripts and renders Quarto documents using runtime requirements (packages, R version) declared right in the file, resolving them with `pak`/`renv`/`rig` into a cached library. It also ships `rx`, a tool to run or install command-line executables provided by R packages. See the [announcement blog post](https://opensource.posit.co/blog/2026-07-23_ir-0-1-0/) and [documentation](https://r-lib.github.io/ir/) for details.
 
