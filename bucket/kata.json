@@ -1,16 +1,16 @@
 {
-    "version": "0.14.1",
+    "version": "0.14.2",
     "description": "Local-first issue tracking for AI-assisted software work, with an agent-friendly CLI and human-facing TUI",
     "homepage": "https://www.katatracker.com",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/kenn-io/kata/releases/download/v0.14.1/kata_0.14.1_windows_amd64.zip",
-            "hash": "6b712afd26079173c86655b6ec2e7117783ed558a59f8c6f07f62c596c708b15"
+            "url": "https://github.com/kenn-io/kata/releases/download/v0.14.2/kata_0.14.2_windows_amd64.zip",
+            "hash": "6e481447dd0b224334d34e56f5e71182b1317c4436d99d11e28e781c958c100f"
         },
         "arm64": {
-            "url": "https://github.com/kenn-io/kata/releases/download/v0.14.1/kata_0.14.1_windows_arm64.zip",
-            "hash": "9c755dcc068009e174ca09b796a8ad44eba0937c71656f0e6eab73694c63ee46"
+            "url": "https://github.com/kenn-io/kata/releases/download/v0.14.2/kata_0.14.2_windows_arm64.zip",
+            "hash": "b800f805d290e88bf87bfe31de518dc0213da3eaaddd202208a703594502ec84"
         }
     },
     "bin": "kata.exe",
