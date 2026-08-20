@@ -6,11 +6,11 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/kenn-io/kata/releases/download/v0.15.0/kata_0.15.0_windows_amd64.zip",
-            "hash": "ad798375b993ac37a528fa4738232728082b255dcc4152ab0ce46f9fee367643"
+            "hash": "7fc9dc11ce92f13a739385014f04feea0df46afaaab20deed4f90ed1c4e97325"
         },
         "arm64": {
             "url": "https://github.com/kenn-io/kata/releases/download/v0.15.0/kata_0.15.0_windows_arm64.zip",
-            "hash": "266dbbd7a15a7204504096e92fccd04616e987d3dcd7d60da5d42bdb59a9b389"
+            "hash": "35792ae8cd315c3158505a440dba56557235a66ef77c29f92b00d5feeadf800d"
         }
     },
     "bin": "kata.exe",
