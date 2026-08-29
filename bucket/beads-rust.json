@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/Dicklesworthstone/beads_rust/releases/download/v0.5.6/br-0.5.6-windows_amd64.zip",
-            "hash": "5f9434b4758f123827f738822f50ed18adce1dc32b0a0ffc87d91f8e6bc23bba"
+            "hash": "c5d8316d7bbe11c2a136749d6142b3718921d37582e83af7e59929705f106006"
         }
     },
     "bin": "br.exe",
