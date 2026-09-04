@@ -33,6 +33,7 @@ This repos contains some manifests I use to quickly install and update some appl
   - [Ark](#ark)
   - [ggsql](#ggsql)
   - [arf](#arf)
+  - [arity](#arity)
   - [Chrome Headless Shell](#chrome-headless-shell)
   - [AI & Developer Tools](#ai--developer-tools)
     - [GitHub MCP Server](#github-mcp-server)
@@ -423,6 +424,18 @@ scoop install arf
 
 # update
 scoop update arf
+```
+
+### arity
+
+[arity](https://github.com/jolars/arity) is a language server, formatter, and linter for R, written in Rust. See the [documentation](https://arity.cc) for setup and usage.
+
+```powershell
+# install
+scoop install arity
+
+# update
+scoop update arity
 ```
 
 ### Chrome Headless Shell
