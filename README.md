@@ -19,6 +19,7 @@ This repos contains some manifests I use to quickly install and update some appl
     - [rig - R Installation Manager](#rig---r-installation-manager)
     - [R release and old releases](#r-release-and-old-releases)
     - [rv - new R package installer](#rv---new-r-package-installer)
+    - [uvr - fast R package and project manager](#uvr---fast-r-package-and-project-manager)
     - [ir - self-describing R scripts runner](#ir---self-describing-r-scripts-runner)
   - [Quarto CLI](#quarto-cli)
     - [Stable version](#stable-version)
@@ -246,6 +247,18 @@ scoop install rv
 
 # update
 scoop update rv
+```
+
+#### uvr - fast R package and project manager
+
+[uvr](https://github.com/nbafrank/uvr) is a fast R package and project manager, written in Rust — the R equivalent of `uv` for Python. It provides a `uvr.toml` manifest, a `uvr.lock` lockfile, per-project isolated package libraries, and built-in R version management, installing packages from pre-built P3M binaries by default. See the [documentation](https://nbafrank.github.io/uvr/) for details.
+
+```powershell
+# install
+scoop install uvr
+
+# update
+scoop update uvr
 ```
 
 #### ir - self-describing R scripts runner
