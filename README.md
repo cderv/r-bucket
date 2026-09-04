@@ -45,6 +45,7 @@ This repos contains some manifests I use to quickly install and update some appl
     - [braid](#braid)
     - [beans](#beans)
     - [roborev](#roborev)
+    - [dcg](#dcg)
     - [kata](#kata)
     - [msgvault](#msgvault)
     - [AgentsView](#agentsview)
@@ -552,6 +553,20 @@ scoop update roborev
 ```
 
 **Skills for Claude Code / Codex:** roborev includes optional skills that integrate with Claude Code and Codex. After installing roborev, run `roborev skills install` to add them. When updating via Scoop, skills are automatically updated to match the new version.
+
+#### dcg
+
+[dcg](https://github.com/Dicklesworthstone/destructive_command_guard) is a hook for AI coding agents that intercepts and blocks destructive shell commands (`rm -rf`, `git reset --hard`, `DROP TABLE`, etc.) before they execute. It supports Claude Code, Codex CLI, Gemini CLI, GitHub Copilot CLI, Cursor, and several other agents through a modular system of 50+ security rule packs, with Windows-specific protections (`Remove-Item -Recurse`, `format`, `vssadmin delete shadows`, etc.) enabled by default.
+
+> [!NOTE]
+> dcg's license is MIT with an added rider restricting use by OpenAI, Anthropic, their affiliates, and anyone acting under their direction. See the [LICENSE](https://github.com/Dicklesworthstone/destructive_command_guard/blob/main/LICENSE) for details.
+
+```powershell
+scoop install dcg
+scoop update dcg
+```
+
+**First-time setup:** After installing, run `dcg install` to configure hooks for the AI coding agents detected on your machine. Use `scoop update dcg` to update — not `dcg update`, which re-runs dcg's own installer outside Scoop's app directory.
 
 #### msgvault
 
