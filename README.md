@@ -51,6 +51,7 @@ This repos contains some manifests I use to quickly install and update some appl
     - [AgentsView](#agentsview)
     - [AgentsView Desktop](#agentsview-desktop)
     - [docbank](#docbank)
+    - [kenn-forge](#kenn-forge)
     - [rtk](#rtk)
     - [ollama](#ollama)
   - [mq](#mq)
@@ -615,6 +616,15 @@ scoop update agentsview-desktop
 ```powershell
 scoop install docbank
 scoop update docbank
+```
+
+#### kenn-forge
+
+[kenn-forge](https://forge.kenn.io/) is a local-first maintainer console with built-in agent workspaces: triage PRs, issues, and CI across GitHub, GitLab, Forgejo, and Gitea, then turn any item into a worktree session running your coding agent. See the [project GitHub](https://github.com/kenn-io/forge) for details.
+
+```powershell
+scoop install kenn-forge
+scoop update kenn-forge
 ```
 
 #### kata
