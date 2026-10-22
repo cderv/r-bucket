@@ -54,7 +54,6 @@ This repos contains some manifests I use to quickly install and update some appl
     - [kenn-forge](#kenn-forge)
     - [rtk](#rtk)
     - [ollama](#ollama)
-    - [agent-browser](#agent-browser)
   - [mq](#mq)
   - [rsvg-convert](#rsvg-convert)
   - [Productivity & Time Management](#productivity--time-management)
@@ -656,20 +655,6 @@ After installing, run `rtk init --global` to set up the Claude Code hook for aut
 scoop install ollama
 scoop update ollama
 ```
-
-#### agent-browser
-
-[agent-browser](https://github.com/vercel-labs/agent-browser) is a browser automation CLI for AI agents, written in Rust. It drives Chrome to navigate pages, fill forms, take screenshots and extract data.
-
-```powershell
-scoop install agent-browser
-scoop update agent-browser
-```
-
-After installing, run `agent-browser install` once to download Chrome for Testing (an existing Chrome install is detected automatically). The standalone release `.exe` is installed together with the `skills/` and `skill-data/` folders from the matching source archive, because `agent-browser skills` reads them from next to the executable.
-
-> [!NOTE]
-> If `agent-browser` was previously installed with `npm install -g`, remove it first (`npm uninstall -g agent-browser`), otherwise the npm shim may come first in `PATH`.
 
 ### mq
 
