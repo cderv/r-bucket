@@ -28,6 +28,7 @@ This repos contains some manifests I use to quickly install and update some appl
   - [Quarto Versions Manager - QVM](#quarto-versions-manager---qvm)
     - [Should I install `quarto` using `qvm` or install `quarto` with scoop directly ?](#should-i-install-quarto-using-qvm-or-install-quarto-with-scoop-directly-)
   - [q2 (Quarto 2)](#q2-quarto-2)
+    - [Nightly version](#nightly-version)
   - [Sass migrator](#sass-migrator)
   - [air](#air)
   - [jarl](#jarl)
@@ -353,6 +354,23 @@ scoop install q2
 
 # update
 scoop update q2
+```
+
+#### Nightly version
+
+`q2-nightly` follows the [nightly build](https://github.com/quarto-dev/q2/releases/tag/nightly) of `main`. Upstream replaces the previous nightly on each build, so only the latest one can be installed.
+
+`q2` and `q2-nightly` both make the `q2` binary available in PATH. Only one can be used at the same time. To switch between them:
+
+```powershell
+scoop install q2-nightly
+q2 --version # e.g 0.36.0-nightly.20261022
+
+# Switching back to stable
+scoop reset q2
+
+# Switching again to nightly
+scoop reset q2-nightly
 ```
 
 ### Sass migrator
