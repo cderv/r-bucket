@@ -13,6 +13,11 @@
         }
     },
     "bin": "octarine.exe",
+    "notes": [
+        "Use 'scoop update octarine-cli' to update; do not run 'octarine update', which replaces the binary outside Scoop's control.",
+        "For AI agents, run 'octarine agent-guide' to print the usage guide, or 'octarine mcp' to serve the CLI as MCP tools over stdio.",
+        "PowerShell tab completion: add 'octarine completion powershell | Out-String | Invoke-Expression' to your profile."
+    ],
     "checkver": {
         "url": "https://octarine.app/releases/cli/latest.txt",
         "regex": "([\\d.]+)"
