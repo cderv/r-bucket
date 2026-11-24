@@ -213,6 +213,8 @@ scoop install rig
 scoop update rig
 ```
 
+The manifest installs rig's portable zip build (x64 and arm64), not the system installer, so installing rig itself needs no admin rights. We recommend rig's [user mode](https://rig.r-lib.org/admin-vs-user-mode.html), which keeps R in your user profile without UAC prompts, in line with Scoop's no-admin approach. `scoop install rig` prints the setup steps (switching to user mode, `PATH`, updates, tab completion).
+
 Using `rig`, you can then install and manage any R versions. See `rig help` for details.
 
 #### R release and old releases
